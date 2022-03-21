@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>AC -TECH LOGIN</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="manifest" href="site.webmanifest">
+	<link rel="shortcut icon" type="image/x-icon" href="../assets/img/logo ACTECH-01.ico">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="img js-fullheight" style="background-image: url(images/bg.jpg);">
+	<div class="btn-home" style="margin: 10px; position: fixed;">
+		<a id="btn-return-home" href="../index.html" class="btn-style btn-style-home"><i class="fas fa-home"
+				style="padding-right: 5px;"></i>Trang chủ</i></a>
+	</div>
+	<section class="ftco-section">
+		<div class="container form-login">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center pt-5 border border-bottom-0 rounded-top">
+					<h2 class="heading-section">AC - TECH</h2>
+				</div>
+			</div>
+			<div class="row justify-content-center position-relative">
+				<div class="col-md-8 col-lg-6 p-5 shadow form-login-content border border-top-0 rounded-bottom">
+					<div class="login-wrap p-0">
+
+						<form action="#" class="signin-form">
+							<div class="form-group">
+								<input type="text" class="form-control" placeholder="Tên đăng nhập" required>
+							</div>
+							<div class="form-group">
+								<input id="password-field" type="password" class="form-control" placeholder="Mật khẩu"
+									required>
+								<span toggle="#password-field"
+									class="fa fa-fw fa-eye field-icon toggle-password"></span>
+							</div>
+							<div class="form-group">
+								<button type="submit" class="form-control btn btn-primary submit px-3">Đăng
+									nhập</button>
+							</div>
+							<div class="form-group d-md-flex">
+								<div class="w-50">
+									<label class="checkbox-wrap checkbox-primary">Remember Me
+										<input type="checkbox" checked>
+										<span class="checkmark"></span>
+									</label>
+								</div>
+								<div class="w-50 text-md-right">
+									<a href="#" style="color: #fff">Quên mật khẩu</a>
+								</div>
+							</div>
+						</form>
+						<p class="w-100 text-center">&mdash; Chưa có tài khoản <a href="register.html">Đăng ký ngay!</a> &mdash;</p>
+						<p class="w-100 text-center">&mdash; Đăng nhập với &mdash;</p>
+						<div class="social d-flex text-center pb-3">
+							<a href="#" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span>
+								Facebook</a>
+							<a href="#" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span>
+								Zalo</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+
+	<script>
+		function addStyleBtnHome() {
+			$("#btn-return-home").addClass("isActiveBtnStyle");
+			setTimeout(function() {
+				$("#btn-return-home").removeClass("isActiveBtnStyle");
+			}, 2300)
+		}
+
+		setInterval(() => addStyleBtnHome(), 1500);
+	</script>
+
+</body>
+
+</html>
