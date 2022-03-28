@@ -2,8 +2,8 @@
 
 
 // Font Family
-    $font_1 :'Teko', sans-serif;   //Heading Font
-    $font_2 :'Barlow', sans-serif;       //Body Font , Menu
+    $font_1 :'Lato', sans-serif;   //Heading Font
+    $font_2 :'Lato', sans-serif;       //Body Font , Menu
 
 /*------------------- Responsive --------------------------*/
 
@@ -13,7 +13,7 @@
     $sm: 'only screen and (min-width: 576px) and (max-width: 767px)';
     $xs:'(max-width: 575px)';
 // Extra Responsive
-
+    $large_device : 'only screen and (min-width: 1201px)';
     $medium_device : 'only screen and (min-width: 992px) and (max-width: 1200px)';
     $tab_device:'only screen and (min-width: 768px) and (max-width: 991px)';
     $large_mobile: 'only screen and (min-width: 576px) and (max-width: 767px)';

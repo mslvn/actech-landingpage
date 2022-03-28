@@ -1,99 +1,131 @@
 .categories-area {
-    .single-cat{
-        border: 1px solid #e1ebf7;
-        border-radius: 6px;
-        padding: 85px 22px;
-        @include transition(.4s);
-        position: relative;
-        z-index: 1;
-        @media #{$xs}{
-            padding: 50px 22px;
-        }
-        &::before {
-            position: absolute;
-            content: "";
-            width: 100%;
-            height: 0;
-            background:#ff5f13;
-            transition: .6s;
-            bottom: 0;
-            left: 0;
-            z-index: -1;
-            border-radius: 6px;
-        }
-        .cat-icon{
-            span{
-                color: $theme-color;
-                font-size: 50px;
-                margin-bottom: 30px;
-                display: block;
-            }
-        }
-        .cat-cap{
-            h5{
-             & > a{
-                font-size: 36px;
-                font-weight: 700;
-                margin-bottom: 21px;
-                display: block;
-                @include transition(.2s);
-                font-family:$font_2;
-                @media #{$sm}{
-                    font-size: 26px;
-                }
-                @media #{$xs}{
-                    font-size: 26px;
-                }
-              }
-            }
-            p{
-                margin-bottom: 36px;
-                color: #57667e;
-                font-size: 16px;
-                @include transition(.2s);
-                @media #{$sm}{
-                    font-size: 15px;
-
-                }
-            }
-            a{
-                color: #1c165c;
-                font-size: 16px;
-                font-weight: 600;
-                @include transition(.2s);
-            }
-        }
-
-
-        // Hover Effect In single 
-        &:hover{
-                border: 1px solid transparent;
-                // background: #ff3d1c;
-
-                &::before {
-                    height: 100%;
-                }
-                .cat-icon{
-                span{
-                    color: #fff;
-                }
-                }
-                .cat-cap{
-                    h5{
-                        color: #fff;
-                    }
-                    p{
-                        color: #fff;
-                    }
-                    a{
-                        color: #fff;
-                    }
-                }
-       }
+  .col-categories {
+    display: flexbox;
+    padding-left: 15px;
+    padding-right: 15px;
+    @media #{$small_mobile} {
+      width: 100%;
+      margin-top: 30px;
     }
+    @media #{$large_mobile} {
+      width: 50%;
+      margin-top: 30px;
+    }
+    @media #{$tab_device} {
+      width: 33.333333%;
+      margin-top: 30px;
+    }
+
+    @media #{$medium_device} {
+      width: 25%;
+      margin-top: 30px;
+    }
+    @media #{$large_device} {
+      width: 20%;
+    }
+  }
+  .single-cat {
+    border: 1px solid #e1ebf7;
+    border-radius: 6px;
+    padding: 20px 5px;
+    @include transition(0.4s);
+    position: relative;
+    z-index: 1;
+    @media #{$xs} {
+      padding: 10px 5px;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      background: $theme-color;
+      transition: 0.6s;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 6px;
+      opacity: 0.9;
+    }
+    .cat-icon {
+      span {
+        color: $theme-color;
+        font-size: 50px;
+        margin-bottom: 30px;
+        display: block;
+        @include transition(1s);
+        transform: rotateY(0deg);
+        -webkit-transform: rotateY(0deg);
+        -moz-transform: rotateY(0deg);
+        -ms-transform: rotateY(0deg);
+        -o-transform: rotateY(0deg);
+      }
+    }
+    .cat-cap {
+      h5 {
+        & > a {
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 21px;
+          display: block;
+          @include transition(0.2s);
+          font-family: $font_2;
+          @media #{$sm} {
+            font-size: 26px;
+          }
+          @media #{$xs} {
+            font-size: 26px;
+          }
+        }
+      }
+      p {
+        margin-bottom: 36px;
+        color: #57667e;
+        font-size: 16px;
+        @include transition(0.2s);
+        @media #{$sm} {
+          font-size: 15px;
+        }
+      }
+      a {
+        color: #1c165c;
+        font-size: 16px;
+        font-weight: 600;
+        @include transition(0.2s);
+      }
+    }
+
+    // Hover Effect In single
+    &:hover {
+      border: 1px solid transparent;
+
+      &::before {
+        height: 100%;
+      }
+      .cat-icon {
+        span {
+          color: #fff;
+          transform: rotateY(180deg);
+          -webkit-transform: rotateY(180deg);
+          -moz-transform: rotateY(180deg);
+          -ms-transform: rotateY(180deg);
+          -o-transform: rotateY(180deg);
+        }
+      }
+      .cat-cap {
+        h5 {
+          color: #fff;
+        }
+        p {
+          color: #fff;
+        }
+        a {
+          color: #fff;
+        }
+      }
+    }
+  }
 }
-
-
 
 // ul li::before{
 //     content: "";
