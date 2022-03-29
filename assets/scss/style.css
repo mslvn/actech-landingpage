@@ -2848,8 +2848,8 @@ hero-btn {
 }
 
 .main-header .main-menu ul ul.submenu > li:hover .submenu-design-website {
-  visibility: visible;
-  left: 40%;
+  display: block;
+  left: 5%;
   opacity: 1;
 }
 
@@ -2866,12 +2866,9 @@ hero-btn {
 }
 
 .main-header .main-menu ul ul.submenu ul.submenu-design-website {
-  position: absolute;
-  width: 10vw;
-  background: #fff;
-  left: 0%;
-  top: 0;
-  visibility: hidden;
+  position: relative;
+  display: none;
+  left: 0;
   opacity: 0;
   -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
@@ -2879,8 +2876,8 @@ hero-btn {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 0.6s ease-out 0s;
-  transition: all 0.6s ease-out 0s;
+  -webkit-transition: all 2s ease-out 0s;
+  transition: all 2s ease-out 0s;
 }
 
 .main-header .main-menu ul ul.submenu ul.submenu-design-website > li {
@@ -2891,7 +2888,7 @@ hero-btn {
 .main-header .main-menu ul ul.submenu ul.submenu-design-website > li > a {
   padding: 6px 10px !important;
   font-size: 16px;
-  color: #000;
+  color: #fff;
 }
 
 .main-header .main-menu ul ul.submenu ul.submenu-design-website > li > a:hover {
@@ -3007,8 +3004,8 @@ hero-btn {
   bottom: -12%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-animation: iconHand 1s infinite alternate ease-in-out, iconHandColor 1s infinite alternate ease-in-out;
-          animation: iconHand 1s infinite alternate ease-in-out, iconHandColor 1s infinite alternate ease-in-out;
+  -webkit-animation: iconHand 1s infinite alternate ease-in-out, iconHandColor 1s infinite alternate ease-in-out;
+          animation: iconHand 1s infinite alternate ease-in-out, iconHandColor 1s infinite alternate ease-in-out;
 }
 
 @media (max-width: 575px) {
@@ -4390,26 +4387,68 @@ hero-btn {
   height: 200px;
 }
 
-.product-managerment .container {
+.product-managerment {
+  padding-top: 120px;
+}
+
+.product-managerment .product-managerment-content {
   position: relative;
   height: 600px;
   width: 100%;
   overflow: hidden;
-  background-color: #000;
+  background-color: #8bafeb;
 }
 
-.product-managerment .container::before {
+.product-managerment .product-managerment-content::after {
   content: "";
   position: absolute;
-  left: 20%;
-  width: 100%;
-  height: 200%;
-  background-color: white;
-  /* fallback */
+  left: 6%;
+  width: 172%;
+  height: 247%;
   background-color: #fff;
-  top: 0;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+  -webkit-transform: rotate(50deg);
+  transform: rotate(-47deg);
+  top: -185%;
+}
+
+.product-managerment .product-managerment-content .product-managerment-title {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+.product-managerment .product-managerment-content .product-managerment-title-1 {
+  position: relative;
+  left: 20%;
+}
+
+.product-managerment .product-managerment-content .product-managerment-title-2 {
+  position: relative;
+  left: 35%;
+}
+
+.product-managerment .product-managerment-content .product-managerment-title-3 {
+  position: relative;
+  left: 50%;
+}
+
+.product-managerment .product-managerment-content .product-managerment-desscription {
+  position: relative;
+  left: 3%;
+  top: 70%;
+}
+
+.product-managerment .product-managerment-content .product-managerment-desscription-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product-managerment .product-managerment-content .product-managerment-desscription-1 i {
+  padding-right: 15px;
+  padding-top: 15px;
 }
 
 .home-blog-area .home-blog-single .blog-img {
