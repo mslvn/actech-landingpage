@@ -1,9 +1,10 @@
 .slider-height {
   .banner-content-icon-hand {
     position: absolute;
+    z-index: 100;
     color: #fff;
     font-size: 2.5em;
-    left: 12%;
+    left: 5%;
     bottom: -12%;
     transform: translateX(-50%);
     animation: iconHand 1s infinite alternate ease-in-out,
@@ -24,7 +25,7 @@
 
   @keyframes iconHand {
     100% {
-      left: 18%;
+      left: 10%;
       font-size: 2.8em;
     }
   }
@@ -113,7 +114,7 @@
     text-align: center;
     &-caption h1 {
       color: $white;
-      font-size: 90px;
+      font-size: 60px;
     }
     &-caption span {
       color: $theme-color;
