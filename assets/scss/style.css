@@ -2848,8 +2848,8 @@ hero-btn {
 }
 
 .main-header .main-menu ul ul.submenu > li:hover .submenu-design-website {
-  display: block;
-  left: 5%;
+  visibility: visible;
+  left: 100%;
   opacity: 1;
 }
 
@@ -2866,18 +2866,22 @@ hero-btn {
 }
 
 .main-header .main-menu ul ul.submenu ul.submenu-design-website {
-  position: relative;
-  display: none;
+  position: absolute;
+  visibility: hidden;
+  width: 70%;
+  top: 0;
   left: 0;
   opacity: 0;
   -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
           box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.05);
+  background: rgba(0, 12, 32, 0.8);
+  border-top: 2px solid #c9252b;
   padding: 5px 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: all 2s ease-out 0s;
-  transition: all 2s ease-out 0s;
+  -webkit-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
 }
 
 .main-header .main-menu ul ul.submenu ul.submenu-design-website > li {
@@ -3004,8 +3008,8 @@ hero-btn {
   bottom: -12%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  -webkit-animation: iconHand 1s infinite alternate ease-in-out, iconHandColor 1s infinite alternate ease-in-out;
-          animation: iconHand 1s infinite alternate ease-in-out, iconHandColor 1s infinite alternate ease-in-out;
+  -webkit-animation: iconHand 1s infinite alternate ease-in-out, iconHandColor 1s infinite alternate ease-in-out;
+          animation: iconHand 1s infinite alternate ease-in-out, iconHandColor 1s infinite alternate ease-in-out;
 }
 
 @media (max-width: 575px) {
@@ -4311,8 +4315,15 @@ hero-btn {
 
 .technology-admin .technology-image {
   position: relative;
+  overflow: hidden;
+  cursor: pointer;
   top: 30%;
   width: 100%;
+}
+
+.technology-admin .technology-image:hover > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .technology-admin .technology-image img {
@@ -4320,6 +4331,10 @@ hero-btn {
   height: 22em;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
 }
 
 .technology-key {
@@ -4434,6 +4449,29 @@ hero-btn {
   left: 50%;
 }
 
+.product-managerment .product-managerment-content .product-managerment-container-image {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.product-managerment .product-managerment-content .product-managerment-container-image:hover > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.product-managerment .product-managerment-content .product-managerment-container-image img {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
 .product-managerment .product-managerment-content .product-managerment-desscription {
   position: relative;
   left: 3%;
@@ -4449,6 +4487,346 @@ hero-btn {
 .product-managerment .product-managerment-content .product-managerment-desscription-1 i {
   padding-right: 15px;
   padding-top: 15px;
+}
+
+.system-manager {
+  margin-top: 120px;
+}
+
+.system-manager-content {
+  position: relative;
+  background-color: #fff;
+  height: 600px;
+}
+
+.system-manager-content::after {
+  position: absolute;
+  content: " ";
+  width: 45.199999%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background-color: #8bafeb;
+}
+
+.system-manager-content-image {
+  position: absolute;
+  top: 100px;
+  margin-left: 0;
+  margin-right: 30px;
+  overflow: hidden;
+}
+
+.system-manager-content-image:hover > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.system-manager-content-image img {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
+.system-manager-content .system-manager-title {
+  position: absolute;
+  height: 84%;
+  right: 0;
+  top: 50px;
+  z-index: 2;
+  background-color: #000;
+  color: #fff;
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  border-left: 5px solid #c9252b;
+}
+
+.system-manager-content .system-manager-title .system-manager-description p {
+  color: #fff;
+}
+
+.system-manager-content .system-manager-title .system-manager-description-1, .system-manager-content .system-manager-title .system-manager-description-2, .system-manager-content .system-manager-title .system-manager-description-3, .system-manager-content .system-manager-title .system-manager-description-4, .system-manager-content .system-manager-title .system-manager-description-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.system-manager-content .system-manager-title .system-manager-description-1 i, .system-manager-content .system-manager-title .system-manager-description-2 i, .system-manager-content .system-manager-title .system-manager-description-3 i, .system-manager-content .system-manager-title .system-manager-description-4 i, .system-manager-content .system-manager-title .system-manager-description-5 i {
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.work-managerment {
+  margin-top: 120px;
+}
+
+.work-managerment-title {
+  position: relative;
+  text-align: center;
+}
+
+.work-managerment-title::before {
+  content: " ";
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  border-top: 8px solid #c9252b;
+  border-left: 6px solid #c9252b;
+  top: -66%;
+  left: 0;
+  -webkit-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+}
+
+.work-managerment-title:hover::before {
+  width: 100%;
+  height: 0;
+  border-top: 2px solid #c9252b;
+}
+
+.work-managerment-description {
+  padding-right: 30px;
+}
+
+.work-managerment-description-1, .work-managerment-description-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.work-managerment-description-1 i, .work-managerment-description-2 i {
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.work-managerment-image {
+  overflow: hidden;
+}
+
+.work-managerment-image:hover > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.work-managerment-image img {
+  width: 100%;
+  height: 400px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
+.accounting-management {
+  position: relative;
+  height: 600px;
+  padding-top: 120px;
+}
+
+.accounting-management-image {
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.accounting-management-image:hover > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.accounting-management-image img {
+  width: 100%;
+  height: 400px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
+.accounting-management-title {
+  text-align: center;
+}
+
+.accounting-management-title::after {
+  content: " ";
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  border-top: 8px solid #c9252b;
+  border-right: 6px solid #c9252b;
+  top: -12%;
+  right: 15px;
+  -webkit-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+}
+
+.accounting-management-title:hover::after {
+  width: 90%;
+  height: 0;
+  border-top: 2px solid #c9252b;
+}
+
+.accounting-management-description {
+  padding-left: 30px;
+}
+
+.accounting-management-description-1, .accounting-management-description-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.accounting-management-description-1 i, .accounting-management-description-2 i {
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.human-managerment {
+  margin-top: 20px;
+  position: relative;
+  height: 600px;
+  background-color: #8bafeb;
+}
+
+.human-managerment-content {
+  padding-top: 100px;
+}
+
+.human-managerment-title {
+  text-align: center;
+}
+
+.human-managerment-title::after {
+  content: " ";
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  border-top: 8px solid #c9252b;
+  border-left: 6px solid #c9252b;
+  top: -8%;
+  left: 15px;
+  -webkit-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+}
+
+.human-managerment-title:hover::after {
+  width: 90%;
+  height: 0;
+  border-top: 2px solid #c9252b;
+}
+
+.human-managerment-description {
+  padding-right: 30px;
+}
+
+.human-managerment-description-1, .human-managerment-description-2, .human-managerment-description-3, .human-managerment-description-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.human-managerment-description-1 i, .human-managerment-description-2 i, .human-managerment-description-3 i, .human-managerment-description-4 i {
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.human-managerment-image {
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.human-managerment-image:hover > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.human-managerment-image img {
+  width: 100%;
+  height: 400px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
+.business-managerment {
+  margin-top: 20px;
+  position: relative;
+  height: 600px;
+}
+
+.business-managerment-content {
+  padding-top: 100px;
+}
+
+.business-managerment-title {
+  text-align: center;
+}
+
+.business-managerment-title::after {
+  content: " ";
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  border-top: 8px solid #c9252b;
+  border-right: 6px solid #c9252b;
+  top: -8%;
+  right: 15px;
+  -webkit-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+}
+
+.business-managerment-title:hover::after {
+  width: 90%;
+  height: 0;
+  border-top: 2px solid #c9252b;
+}
+
+.business-managerment-description {
+  padding-left: 30px;
+}
+
+.business-managerment-description-1, .business-managerment-description-2, .business-managerment-description-3, .business-managerment-description-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.business-managerment-description-1 i, .business-managerment-description-2 i, .business-managerment-description-3 i, .business-managerment-description-4 i {
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+.business-managerment-image {
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.business-managerment-image:hover > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.business-managerment-image img {
+  width: 100%;
+  height: 400px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
 }
 
 .home-blog-area .home-blog-single .blog-img {
