@@ -83,10 +83,16 @@
     font-weight: 600;
     text-transform: capitalize;
     line-height: 1;
+    @media #{$xs} {
+      font-size: 18px;
+    }
   }
   .breadcrumb {
     background: none;
     font-size: 20px;
+    @media #{$xs} {
+      font-size: 14px;
+    }
   }
 }
 
