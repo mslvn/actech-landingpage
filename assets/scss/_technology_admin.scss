@@ -71,10 +71,14 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media #{$xs} {
+      position: static;
+      transform: none;
+      height: inherit;
+    }
   }
   @media #{$xs} {
     margin-top: 60px;
-    max-height: 650px;
   }
   .technology-key-video {
     width: 100%;
@@ -93,11 +97,15 @@
     p {
       text-align: justify;
     }
+    .technology-key-title {
+      margin-bottom: 20px;
+    }
     @media #{$xs} {
       position: static;
       width: 100%;
-      margin-top: 250px;
+      margin-top: 50px;
       padding: 0;
+      background: none;
     }
     &::before {
       content: "";
@@ -141,12 +149,24 @@
 
 .product-managerment {
   padding-top: 120px;
+  @media #{$xs} {
+    padding-top: 0;
+    margin-top: 60px;
+  }
   .product-managerment-content {
     .product-managerment-title {
       background-color: #8bafeb;
       padding: 90px 30px;
       max-height: 400px;
       border-radius: 6px;
+      @media #{$xs} {
+        .section-tittle {
+          margin-bottom: 20px;
+        }
+        padding: 0;
+        margin-top: 50px;
+        background: none;
+      }
       &::after {
         position: absolute;
         content: " ";
@@ -157,6 +177,9 @@
         border-right: 5px solid $theme-color;
         border-radius: 6px;
         @include transition(0.6s);
+        @media #{$xs} {
+          display: none;
+        }
       }
       &:hover::after {
         height: 0;
@@ -176,6 +199,9 @@
         object-fit: cover;
         @include transform(scale(1));
         transition: all 0.5s ease-out 0s;
+        @media #{$xs} {
+          height: 200px;
+        }
       }
     }
 
@@ -189,11 +215,17 @@
         display: flex;
         p {
           color: #fff;
+          @media #{$xs} {
+            color: #000;
+          }
         }
         i {
           color: #fff;
           padding-right: 15px;
           padding-top: 15px;
+          @media #{$xs} {
+            color: #000;
+          }
         }
       }
     }
@@ -202,6 +234,9 @@
 
 .system-manager {
   margin-top: 120px;
+  @media #{$xs} {
+    margin-top: 60px;
+  }
   &-content {
     background-color: #fff;
     &-image {
@@ -217,6 +252,9 @@
         object-fit: cover;
         @include transform(scale(1));
         transition: all 0.5s ease-out 0s;
+        @media #{$xs} {
+          height: 200px;
+        }
       }
     }
     .system-manager-title {
@@ -242,10 +280,12 @@
         width: 95%;
         border-top: 8px solid $theme-color;
       }
-
       .system-manager-description {
         p {
           color: #fff;
+          @media #{$xs} {
+            color: #000;
+          }
         }
         &-1,
         &-2,
@@ -260,6 +300,17 @@
           }
         }
       }
+      @media #{$xs} {
+        background: none;
+        color: #000;
+        padding: 0;
+        .section-tittle {
+          margin: 30px 0;
+        }
+        &::after {
+          display: none;
+        }
+      }
     }
   }
 }
@@ -269,11 +320,22 @@
   margin-top: 120px;
   height: 500px;
   background: #8bafeb;
+  @media #{$xs} {
+    position: static;
+    height: auto;
+    margin-top: 60px;
+    background: #000000d9;
+  }
   .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media #{$xs} {
+      position: static;
+      transform: none;
+      padding: 30px 15px;
+    }
   }
   &-title {
     position: relative;
@@ -294,6 +356,14 @@
       height: 0;
       border-top: 2px solid $theme-color;
     }
+    @media #{$xs} {
+      .section-tittle {
+        margin-bottom: 30px;
+      }
+      &::before {
+        display: none;
+      }
+    }
   }
   &-description {
     padding-right: 30px;
@@ -301,9 +371,17 @@
     &-2 {
       display: flex;
       text-align: justify;
+      p {
+        @media #{$xs} {
+          color: #fff;
+        }
+      }
       i {
         padding-right: 15px;
         padding-top: 15px;
+        @media #{$xs} {
+          color: #fff;
+        }
       }
     }
   }
@@ -318,6 +396,9 @@
       height: 400px;
       @include transform(scale(1));
       transition: all 0.5s ease-out 0s;
+      @media #{$xs} {
+        height: 200px;
+      }
     }
   }
 }
@@ -326,7 +407,12 @@
   position: relative;
   height: 500px;
   padding-top: 120px;
-
+  @media #{$xs} {
+    margin-top: 60px;
+    padding-top: 0;
+    position: static;
+    height: auto;
+  }
   &-image {
     overflow: hidden;
     cursor: pointer;
@@ -338,6 +424,9 @@
       height: 400px;
       @include transform(scale(1));
       transition: all 0.5s ease-out 0s;
+      @media #{$xs} {
+        height: 200px;
+      }
     }
   }
   &-title {
@@ -363,6 +452,18 @@
       height: 0;
       border-top: 8px solid $theme-color;
     }
+    @media #{$xs} {
+      background: none;
+      padding: 30px 0;
+      min-height: fit-content;
+      padding-bottom: 0;
+      &::after {
+        display: none;
+      }
+      .section-tittle {
+        margin-bottom: 30px;
+      }
+    }
   }
 
   &-description {
@@ -372,11 +473,17 @@
       text-align: justify;
       p {
         color: #fff;
+        @media #{$xs} {
+          color: #000;
+        }
       }
       i {
         color: #fff;
         padding-right: 15px;
         padding-top: 15px;
+        @media #{$xs} {
+          color: #000;
+        }
       }
     }
   }
@@ -387,11 +494,22 @@
   position: relative;
   height: 500px;
   background-color: #8bafeb;
+  @media #{$xs} {
+    margin-top: 60px;
+    position: static;
+    height: auto;
+    background: #000000d9;
+  }
   .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media #{$xs} {
+      position: static;
+      transform: none;
+      padding: 30px 15px;
+    }
   }
   &-content {
   }
@@ -412,6 +530,17 @@
       width: 90%;
       height: 0;
       border-top: 2px solid $theme-color;
+    }
+    @media #{$xs} {
+      .section-tittle {
+        margin-bottom: 30px;
+        span {
+          font-size: 17px;
+        }
+      }
+      &::after {
+        display: none;
+      }
     }
   }
   &-description {
@@ -431,6 +560,9 @@
         padding-top: 15px;
       }
     }
+    @media #{$xs} {
+      padding-right: 0;
+    }
   }
 
   &-image {
@@ -444,6 +576,9 @@
       height: 400px;
       @include transform(scale(1));
       transition: all 0.5s ease-out 0s;
+      @media #{$xs} {
+       height: 200px;
+      }
     }
   }
 }
@@ -453,11 +588,22 @@
   position: relative;
   height: 500px;
   background: #8bafeb;
+  @media #{$xs} {
+    margin-top: 60px;
+    position: static;
+    height: auto;
+    background: #000000d9;
+  }
   .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    @media #{$xs} {
+      position: static;
+      transform: none;
+      padding: 30px 15px;
+    }
   }
   &-content {
   }
@@ -479,6 +625,14 @@
       height: 0;
       border-top: 2px solid $theme-color;
     }
+    @media #{$xs} {
+      &::after {
+        display: none;
+      }
+      .section-tittle {
+        margin-bottom: 30px;  
+      }
+    }
   }
   &-description {
     padding-right: 30px;
@@ -488,9 +642,17 @@
     &-4 {
       display: flex;
       text-align: justify;
+      p {
+        @media #{$xs} {
+          color: #fff;
+        }
+      }
       i {
         padding-right: 15px;
         padding-top: 15px;
+        @media #{$xs} {
+          color: #fff;
+        }
       }
     }
   }
@@ -505,12 +667,18 @@
       height: 400px;
       @include transform(scale(1));
       transition: all 0.5s ease-out 0s;
+      @media #{$xs} {
+        height: 200px;
+      }
     }
   }
 }
 
 .form-register-smt {
   margin: 120px 0;
+  @media #{$xs} {
+    margin-top: 60px;
+  }
   .contact-form-wrapper {
     position: relative;
     &::after {
@@ -527,6 +695,11 @@
       border-top: 3px solid $theme-color;
       border-radius: 6px;
     }
+    @media #{$xs} {
+      &::after {
+        display: none;
+      }
+    }
   }
 
   .submit-btn {
@@ -535,6 +708,9 @@
     animation: slidebg 6s infinite alternate;
     .btn-arrow {
       animation: changeColor 1s infinite alternate;
+    }
+    @media #{$xs} {
+      padding: 18px 20px;
     }
   }
 }
@@ -552,4 +728,3 @@
     color: #fff;
   }
 }
-

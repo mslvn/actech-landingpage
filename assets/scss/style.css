@@ -4075,6 +4075,7 @@ hero-btn {
   .footer-area .footer-heading .contact-company {
     float: left;
     margin-top: 30px;
+    font-size: 25px;
   }
 }
 
@@ -4082,7 +4083,7 @@ hero-btn {
   .footer-area .footer-heading .contact-company {
     float: left;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 
@@ -4422,9 +4423,17 @@ hero-btn {
 }
 
 @media (max-width: 575px) {
+  .technology-key .container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    height: inherit;
+  }
+}
+
+@media (max-width: 575px) {
   .technology-key {
     margin-top: 60px;
-    max-height: 650px;
   }
 }
 
@@ -4450,12 +4459,17 @@ hero-btn {
   text-align: justify;
 }
 
+.technology-key .technology-key-content .technology-key-title {
+  margin-bottom: 20px;
+}
+
 @media (max-width: 575px) {
   .technology-key .technology-key-content {
     position: static;
     width: 100%;
-    margin-top: 250px;
+    margin-top: 50px;
     padding: 0;
+    background: none;
   }
 }
 
@@ -4511,11 +4525,29 @@ hero-btn {
   padding-top: 120px;
 }
 
+@media (max-width: 575px) {
+  .product-managerment {
+    padding-top: 0;
+    margin-top: 60px;
+  }
+}
+
 .product-managerment .product-managerment-content .product-managerment-title {
   background-color: #8bafeb;
   padding: 90px 30px;
   max-height: 400px;
   border-radius: 6px;
+}
+
+@media (max-width: 575px) {
+  .product-managerment .product-managerment-content .product-managerment-title {
+    padding: 0;
+    margin-top: 50px;
+    background: none;
+  }
+  .product-managerment .product-managerment-content .product-managerment-title .section-tittle {
+    margin-bottom: 20px;
+  }
 }
 
 .product-managerment .product-managerment-content .product-managerment-title::after {
@@ -4529,6 +4561,12 @@ hero-btn {
   border-radius: 6px;
   -webkit-transition: all 0.6s ease-out 0s;
   transition: all 0.6s ease-out 0s;
+}
+
+@media (max-width: 575px) {
+  .product-managerment .product-managerment-content .product-managerment-title::after {
+    display: none;
+  }
 }
 
 .product-managerment .product-managerment-content .product-managerment-title:hover::after {
@@ -4557,6 +4595,12 @@ hero-btn {
   transition: all 0.5s ease-out 0s;
 }
 
+@media (max-width: 575px) {
+  .product-managerment .product-managerment-content .product-managerment-image img {
+    height: 200px;
+  }
+}
+
 .product-managerment .product-managerment-content .product-managerment-desscription {
   position: relative;
   left: 3%;
@@ -4574,14 +4618,32 @@ hero-btn {
   color: #fff;
 }
 
+@media (max-width: 575px) {
+  .product-managerment .product-managerment-content .product-managerment-desscription-1 p, .product-managerment .product-managerment-content .product-managerment-desscription-2 p {
+    color: #000;
+  }
+}
+
 .product-managerment .product-managerment-content .product-managerment-desscription-1 i, .product-managerment .product-managerment-content .product-managerment-desscription-2 i {
   color: #fff;
   padding-right: 15px;
   padding-top: 15px;
 }
 
+@media (max-width: 575px) {
+  .product-managerment .product-managerment-content .product-managerment-desscription-1 i, .product-managerment .product-managerment-content .product-managerment-desscription-2 i {
+    color: #000;
+  }
+}
+
 .system-manager {
   margin-top: 120px;
+}
+
+@media (max-width: 575px) {
+  .system-manager {
+    margin-top: 60px;
+  }
 }
 
 .system-manager-content {
@@ -4608,6 +4670,12 @@ hero-btn {
   transform: scale(1);
   -webkit-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
+}
+
+@media (max-width: 575px) {
+  .system-manager-content-image img {
+    height: 200px;
+  }
 }
 
 .system-manager-content .system-manager-title {
@@ -4642,6 +4710,12 @@ hero-btn {
   color: #fff;
 }
 
+@media (max-width: 575px) {
+  .system-manager-content .system-manager-title .system-manager-description p {
+    color: #000;
+  }
+}
+
 .system-manager-content .system-manager-title .system-manager-description-1, .system-manager-content .system-manager-title .system-manager-description-2, .system-manager-content .system-manager-title .system-manager-description-3, .system-manager-content .system-manager-title .system-manager-description-4, .system-manager-content .system-manager-title .system-manager-description-5 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4654,11 +4728,34 @@ hero-btn {
   padding-top: 15px;
 }
 
+@media (max-width: 575px) {
+  .system-manager-content .system-manager-title {
+    background: none;
+    color: #000;
+    padding: 0;
+  }
+  .system-manager-content .system-manager-title .section-tittle {
+    margin: 30px 0;
+  }
+  .system-manager-content .system-manager-title::after {
+    display: none;
+  }
+}
+
 .work-managerment {
   position: relative;
   margin-top: 120px;
   height: 500px;
   background: #8bafeb;
+}
+
+@media (max-width: 575px) {
+  .work-managerment {
+    position: static;
+    height: auto;
+    margin-top: 60px;
+    background: #000000d9;
+  }
 }
 
 .work-managerment .container {
@@ -4667,6 +4764,15 @@ hero-btn {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 575px) {
+  .work-managerment .container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    padding: 30px 15px;
+  }
 }
 
 .work-managerment-title {
@@ -4693,6 +4799,15 @@ hero-btn {
   border-top: 2px solid #c9252b;
 }
 
+@media (max-width: 575px) {
+  .work-managerment-title .section-tittle {
+    margin-bottom: 30px;
+  }
+  .work-managerment-title::before {
+    display: none;
+  }
+}
+
 .work-managerment-description {
   padding-right: 30px;
 }
@@ -4704,9 +4819,21 @@ hero-btn {
   text-align: justify;
 }
 
+@media (max-width: 575px) {
+  .work-managerment-description-1 p, .work-managerment-description-2 p {
+    color: #fff;
+  }
+}
+
 .work-managerment-description-1 i, .work-managerment-description-2 i {
   padding-right: 15px;
   padding-top: 15px;
+}
+
+@media (max-width: 575px) {
+  .work-managerment-description-1 i, .work-managerment-description-2 i {
+    color: #fff;
+  }
 }
 
 .work-managerment-image {
@@ -4727,10 +4854,25 @@ hero-btn {
   transition: all 0.5s ease-out 0s;
 }
 
+@media (max-width: 575px) {
+  .work-managerment-image img {
+    height: 200px;
+  }
+}
+
 .accounting-management {
   position: relative;
   height: 500px;
   padding-top: 120px;
+}
+
+@media (max-width: 575px) {
+  .accounting-management {
+    margin-top: 60px;
+    padding-top: 0;
+    position: static;
+    height: auto;
+  }
 }
 
 .accounting-management-image {
@@ -4750,6 +4892,12 @@ hero-btn {
   transform: scale(1);
   -webkit-transition: all 0.5s ease-out 0s;
   transition: all 0.5s ease-out 0s;
+}
+
+@media (max-width: 575px) {
+  .accounting-management-image img {
+    height: 200px;
+  }
 }
 
 .accounting-management-title {
@@ -4780,6 +4928,23 @@ hero-btn {
   border-top: 8px solid #c9252b;
 }
 
+@media (max-width: 575px) {
+  .accounting-management-title {
+    background: none;
+    padding: 30px 0;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+    padding-bottom: 0;
+  }
+  .accounting-management-title::after {
+    display: none;
+  }
+  .accounting-management-title .section-tittle {
+    margin-bottom: 30px;
+  }
+}
+
 .accounting-management-description-1, .accounting-management-description-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4791,10 +4956,22 @@ hero-btn {
   color: #fff;
 }
 
+@media (max-width: 575px) {
+  .accounting-management-description-1 p, .accounting-management-description-2 p {
+    color: #000;
+  }
+}
+
 .accounting-management-description-1 i, .accounting-management-description-2 i {
   color: #fff;
   padding-right: 15px;
   padding-top: 15px;
+}
+
+@media (max-width: 575px) {
+  .accounting-management-description-1 i, .accounting-management-description-2 i {
+    color: #000;
+  }
 }
 
 .human-managerment {
@@ -4804,12 +4981,30 @@ hero-btn {
   background-color: #8bafeb;
 }
 
+@media (max-width: 575px) {
+  .human-managerment {
+    margin-top: 60px;
+    position: static;
+    height: auto;
+    background: #000000d9;
+  }
+}
+
 .human-managerment .container {
   position: absolute;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 575px) {
+  .human-managerment .container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    padding: 30px 15px;
+  }
 }
 
 .human-managerment-title {
@@ -4835,6 +5030,18 @@ hero-btn {
   border-top: 2px solid #c9252b;
 }
 
+@media (max-width: 575px) {
+  .human-managerment-title .section-tittle {
+    margin-bottom: 30px;
+  }
+  .human-managerment-title .section-tittle span {
+    font-size: 17px;
+  }
+  .human-managerment-title::after {
+    display: none;
+  }
+}
+
 .human-managerment-description {
   padding-right: 30px;
   color: #fff;
@@ -4856,6 +5063,12 @@ hero-btn {
   padding-top: 15px;
 }
 
+@media (max-width: 575px) {
+  .human-managerment-description {
+    padding-right: 0;
+  }
+}
+
 .human-managerment-image {
   overflow: hidden;
   cursor: pointer;
@@ -4875,11 +5088,26 @@ hero-btn {
   transition: all 0.5s ease-out 0s;
 }
 
+@media (max-width: 575px) {
+  .human-managerment-image img {
+    height: 200px;
+  }
+}
+
 .business-managerment {
   margin-top: 120px;
   position: relative;
   height: 500px;
   background: #8bafeb;
+}
+
+@media (max-width: 575px) {
+  .business-managerment {
+    margin-top: 60px;
+    position: static;
+    height: auto;
+    background: #000000d9;
+  }
 }
 
 .business-managerment .container {
@@ -4888,6 +5116,15 @@ hero-btn {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 575px) {
+  .business-managerment .container {
+    position: static;
+    -webkit-transform: none;
+            transform: none;
+    padding: 30px 15px;
+  }
 }
 
 .business-managerment-title {
@@ -4913,6 +5150,15 @@ hero-btn {
   border-top: 2px solid #c9252b;
 }
 
+@media (max-width: 575px) {
+  .business-managerment-title::after {
+    display: none;
+  }
+  .business-managerment-title .section-tittle {
+    margin-bottom: 30px;
+  }
+}
+
 .business-managerment-description {
   padding-right: 30px;
 }
@@ -4924,9 +5170,21 @@ hero-btn {
   text-align: justify;
 }
 
+@media (max-width: 575px) {
+  .business-managerment-description-1 p, .business-managerment-description-2 p, .business-managerment-description-3 p, .business-managerment-description-4 p {
+    color: #fff;
+  }
+}
+
 .business-managerment-description-1 i, .business-managerment-description-2 i, .business-managerment-description-3 i, .business-managerment-description-4 i {
   padding-right: 15px;
   padding-top: 15px;
+}
+
+@media (max-width: 575px) {
+  .business-managerment-description-1 i, .business-managerment-description-2 i, .business-managerment-description-3 i, .business-managerment-description-4 i {
+    color: #fff;
+  }
 }
 
 .business-managerment-image {
@@ -4948,8 +5206,20 @@ hero-btn {
   transition: all 0.5s ease-out 0s;
 }
 
+@media (max-width: 575px) {
+  .business-managerment-image img {
+    height: 200px;
+  }
+}
+
 .form-register-smt {
   margin: 120px 0;
+}
+
+@media (max-width: 575px) {
+  .form-register-smt {
+    margin-top: 60px;
+  }
 }
 
 .form-register-smt .contact-form-wrapper {
@@ -4973,6 +5243,12 @@ hero-btn {
   border-radius: 6px;
 }
 
+@media (max-width: 575px) {
+  .form-register-smt .contact-form-wrapper::after {
+    display: none;
+  }
+}
+
 .form-register-smt .submit-btn {
   position: relative;
   left: 0;
@@ -4983,6 +5259,12 @@ hero-btn {
 .form-register-smt .submit-btn .btn-arrow {
   -webkit-animation: changeColor 1s infinite alternate;
           animation: changeColor 1s infinite alternate;
+}
+
+@media (max-width: 575px) {
+  .form-register-smt .submit-btn {
+    padding: 18px 20px;
+  }
 }
 
 @-webkit-keyframes slidebg {
@@ -5017,8 +5299,113 @@ hero-btn {
   }
 }
 
+.project-app {
+  margin-top: 120px;
+}
+
+.project-app-description {
+  margin-bottom: 50px;
+}
+
+.project-app-image {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  top: 0;
+  overflow: hidden;
+}
+
+.project-app-image img {
+  width: 90%;
+  height: 1000px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  -webkit-transition: all 2.5s ease-out;
+  transition: all 2.5s ease-out;
+}
+
+.project-app-image img:hover {
+  top: -200px;
+  cursor: pointer;
+}
+
 .introduce-app {
   margin-top: 120px;
+}
+
+.introduce-app-content {
+  position: relative;
+  background: #8bafeb;
+  min-height: 400px;
+  border-radius: 6px;
+}
+
+.introduce-app-content::before {
+  content: " ";
+  position: absolute;
+  width: 0;
+  height: 100%;
+  border-top: 8px solid #c9252b;
+  border-right: 6px solid #c9252b;
+  top: 0;
+  right: 0;
+  border-radius: 6px;
+  -webkit-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+}
+
+.introduce-app-content:hover::before {
+  width: 100%;
+  height: 0;
+  border-top: 8px solid #c9252b;
+  border-radius: 6px;
+}
+
+.introduce-app-content-wapper {
+  position: absolute;
+  padding: 0 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.introduce-app-description-1, .introduce-app-description-2, .introduce-app-description-3, .introduce-app-description-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.introduce-app-description-1 p, .introduce-app-description-2 p, .introduce-app-description-3 p, .introduce-app-description-4 p {
+  color: #fff;
+}
+
+.introduce-app-description-1 i, .introduce-app-description-2 i, .introduce-app-description-3 i, .introduce-app-description-4 i {
+  color: #fff;
+  padding-right: 15px;
+  padding-top: 10px;
+}
+
+.introduce-app-image {
+  width: 100%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.introduce-app-image:hover > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.introduce-app-image img {
+  width: 100%;
+  height: 400px;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
 }
 
 .benefit-app {

@@ -32,11 +32,12 @@
       @media #{$sm} {
         float: left;
         margin-top: 30px;
+        font-size: 25px;
       }
       @media #{$xs} {
         float: left;
         margin-top: 20px;
-        font-size: 30px;
+        font-size: 25px;
       }
       @media #{$md} {
         float: left;
