@@ -952,15 +952,15 @@ hero-btn {
     padding-bottom: 50px;
   }
   @media #{$md} {
-    padding-top: 100px;
+    padding-top: 30px;
     padding-bottom: 50px;
   }
   @media #{$sm} {
-    padding-top: 80px;
+    padding-top: 15px;
     padding-bottom: 0px;
   }
   @media #{$xs} {
-    padding-top: 80px;
+    padding-top: 15px;
     padding-bottom: 0px;
   }
 }
