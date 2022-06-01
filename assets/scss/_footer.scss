@@ -49,7 +49,9 @@
         }
     }
     .address {
-      color: #fff;
+      p, a, span {
+        color: #fff;
+      }
       line-height: 2;
     }
     .footer-map {

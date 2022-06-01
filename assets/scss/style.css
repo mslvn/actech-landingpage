@@ -2580,7 +2580,7 @@ hero-btn {
 }
 
 .section-tittle span {
-  font-size: 18px;
+  font-size: 23px;
   display: block;
   color: #c9252b;
   font-weight: 600;
@@ -4102,8 +4102,11 @@ hero-btn {
 }
 
 .footer-area .footer-heading .address {
-  color: #fff;
   line-height: 2;
+}
+
+.footer-area .footer-heading .address p, .footer-area .footer-heading .address a, .footer-area .footer-heading .address span {
+  color: #fff;
 }
 
 .footer-area .footer-heading .footer-map {
