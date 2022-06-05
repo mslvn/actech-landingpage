@@ -157,7 +157,7 @@
     .product-managerment-title {
       background-color: #000000d9;
       padding: 90px 30px;
-      max-height: 400px;
+      height: 400px;
       border-radius: 6px;
       @media #{$xs} {
         .section-tittle {
@@ -263,7 +263,7 @@
       border-radius: 6px;
       padding: 30px;
       text-align: center;
-      max-height: 400px;
+      height: 400px;
       &::after {
         position: absolute;
         content: " ";
@@ -426,11 +426,15 @@
     }
   }
   &-title {
-    text-align: center;
-    padding: 70px 30px;
+        text-align: center;
+    padding: 5px 10px;
     background: #000000d9;
     border-radius: 6px;
-    min-height: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     &::after {
       content: " ";
       position: absolute;
@@ -519,7 +523,7 @@
       border-top: 8px solid $theme-color;
       border-left: 6px solid $theme-color;
       top: -5%;
-      left: 15px;
+      left: 10px;
       @include transition(0.6s);
     }
     &:hover::after {

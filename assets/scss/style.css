@@ -3264,6 +3264,164 @@ hero-btn {
   }
 }
 
+.about-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin-top: 80px;
+}
+
+.about-description .descrition {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-top: 70px;
+  position: relative;
+  z-index: 1;
+}
+
+.about-description .descrition-left {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-transform: translateX(28px);
+          transform: translateX(28px);
+}
+
+.about-description .descrition-right {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-transform: translateX(-28px);
+          transform: translateX(-28px);
+}
+
+.about-description .about-content-wapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  width: 360px;
+  text-align: justify;
+}
+
+.about-description .about-content-wapper .about-content {
+  padding: 30px;
+  height: 600px;
+  background-color: #fff;
+  -webkit-transform: translateX(9px);
+          transform: translateX(9px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-description .about-content-wapper .about-content .content {
+  -webkit-transition: all .6s;
+  transition: all .6s;
+}
+
+.about-description .about-content-wapper .about-content .content .title {
+  font-size: 30px;
+  text-align: center;
+  color: #1bc1c1;
+}
+
+.about-description .about-content-wapper .about-content .content .descrition {
+  margin-top: 30px;
+}
+
+.about-description .about-content-wapper::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border: 1px solid #ccc;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.about-description .icon-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-description .icon-item h3 {
+  font-size: 16px;
+}
+
+.about-description .icon-item .wapper-icon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: #fff;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.about-description .icon-item .wapper-icon:hover {
+  background-color: #c9252b;
+}
+
+.about-description .icon-item .wapper-icon:hover .icon-styles {
+  width: 60px;
+}
+
+.about-description .icon-item .wapper-icon .icon-styles {
+  width: 50px;
+  height: 50px;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+.about-description .icon-item-right {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
 @media (max-width: 575px) {
   .about-caption {
     margin-bottom: 35px;
@@ -4538,7 +4696,7 @@ hero-btn {
 .product-managerment .product-managerment-content .product-managerment-title {
   background-color: #000000d9;
   padding: 90px 30px;
-  max-height: 400px;
+  height: 400px;
   border-radius: 6px;
 }
 
@@ -4687,7 +4845,7 @@ hero-btn {
   border-radius: 6px;
   padding: 30px;
   text-align: center;
-  max-height: 400px;
+  height: 400px;
 }
 
 .system-manager-content .system-manager-title::after {
@@ -4898,10 +5056,20 @@ hero-btn {
 
 .accounting-management-title {
   text-align: center;
-  padding: 70px 30px;
+  padding: 5px 10px;
   background: #000000d9;
   border-radius: 6px;
-  min-height: 400px;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .accounting-management-title::after {
@@ -5015,7 +5183,7 @@ hero-btn {
   border-top: 8px solid #c9252b;
   border-left: 6px solid #c9252b;
   top: -5%;
-  left: 15px;
+  left: 10px;
   -webkit-transition: all 0.6s ease-out 0s;
   transition: all 0.6s ease-out 0s;
 }

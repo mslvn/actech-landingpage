@@ -245,4 +245,159 @@
       },
     });
   }
+
+  const applyContentSeo = () => {
+    $(".about-content").empty();
+    $(".about-content").append(`
+      <div class="content w3-animate-zoom">
+        <div class="title">
+          Thiết kế website chuẩn SEO
+        </div>
+        <div class="descrition">
+          Thiết kế web chuyên nghiệp chuẩn SEO giúp bạn dễ dàng
+          tối ưu hóa và đưa sản phẩm – dịch vụ của doanh nghiệp
+          bạn lên TOP tìm kiếm trên Google. Tại MIKO TECH,
+          website được thiết kế chuẩn SEO ngay từ khi xây dựng
+          web, tối ưu từ source code đến các tính năng, OnPage
+          và OffPage, thiết kế responsive, bảo mật giao thức SSL
+          thân thiện với bộ máy tìm kiếm,...
+        </div>
+      </div>
+    `);
+  }
+
+  const applyContentSpeed = () => {
+    $(".about-content").empty();
+    $(".about-content").append(`
+      <div class="content w3-animate-zoom">
+        <div class="title">
+          Tốc độ
+        </div>
+        <div class="descrition">
+          Không ai thích 1 website mà tốc độ load
+          quá chậm, website chậm sẽ
+          dẫn đến khách hàng bạn rời bỏ bạn vì không ai thích chờ đợi. Website hoạt động ổn định với tốc độ tải
+          trang nhanh, hoạt động mượt mà giúp tăng tỷ lệ chuyển đổi trong hoạt động bán hàng của bạn và doanh
+          nghiệp.
+        </div>
+      </div>
+    `);
+  };
+
+  const applyContentFeature = () => {
+    $(".about-content").empty();
+    $(".about-content").append(`
+      <div class="content w3-animate-zoom">
+        <div class="title">
+          Tính năng
+        </div>
+        <div class="descrition">
+          Tất cả yêu cầu riêng biệt về website của
+          doanh nghiệp đều được đáp
+          ứng như tích hợp cổng thanh toán, hệ thống chatbot hỗ trợ khách hàng, hệ thống dữ liệu kho, hỗ trợ kết
+          nối đa kênh,... Và hàng trăm nghìn tính năng. Thiết kế website với tính năng hữu ích giúp tăng tỷ lệ
+          chuyển đổi cho doanh nghiệp của bạn.
+        </div>
+      </div>
+    `);
+  };
+
+  const applyContentSecurity = () => {
+    $(".about-content").empty();
+    $(".about-content").append(`
+      <div class="content w3-animate-zoom">
+        <div class="title">
+          Bảo mật
+        </div>
+        <div class="descrition">
+          Trong bất cứ ngành nghề nào không riêng
+          gì thiết kế website, bảo
+          mật luôn là một tiêu chí quan trọng. Nếu có sự cố về bảo mật, thông tin khách hàng hoặc doanh nghiệp
+          bị rò rỉ, thiệt hại là điều không thể tránh khỏi. Hiểu được điều đó, thiết kế web tại MIKOTECH luôn
+          đáp ứng tính bảo mật cho website doanh nghiệp bạn thông qua một số công nghệ hiện đại.
+        </div>
+      </div>
+    `);
+  };
+
+  const applyContentAdministration = () => {
+    $(".about-content").empty();
+    $(".about-content").append(`
+      <div class="content w3-animate-zoom">
+        <div class="title">
+          Quản trị
+        </div>
+        <div class="descrition">
+          Thiết kế website chuyên nghiệp không chỉ
+          hướng đến khách hàng mà
+          còn chú ý đến khả năng quản trị. Website có hệ thống lưu trữ, tổng hợp và phân tích dữ liệu, hỗ trợ
+          bạn phân tích và đưa ra những chiến lược kinh doanh hợp lý.
+        </div>
+      </div>
+    `);
+  };
+
+  const applyContentConnect = () => {
+    $(".about-content").empty();
+    $(".about-content").append(`
+      <div class="content w3-animate-zoom">
+        <div class="title">
+          Kết nối
+        </div>
+        <div class="descrition">
+          Hiện nay, thiết kế website áp dụng đa kết
+          nối là điều không còn xa
+          lạ. Khi mà thị trường thương mại điện tử phát triển, tính năng kết nối của website với các sàn thương
+          mại điện tử, API đơn vị vận chuyển, mạng xã hội, Google shopping giúp bạn bán hàng tiện lợi, quản lý
+          dễ dàng chỉ với website.
+        </div>
+      </div>
+    `);
+  };
+
+  const applyContentPlatform = () => {
+    $(".about-content").empty();
+    $(".about-content").append(`
+      <div class="content w3-animate-zoom">
+        <div class="title">
+          Nền tảng
+        </div>
+        <div class="descrition">
+          Tại AC TECH, chúng tôi dựa vào nhu cầu
+          về tính năng để tư vấn
+          nền tảng thiết kế web phù hợp. Bởi mỗi nền tảng có đặc điểm riêng, với tầm nhìn xa, chúng tôi tư vấn
+          bạn nền tảng phù hợp để trong dài hạn bạn vẫn có thể sử dụng tốt website của mình. Chúng tôi đáp ứng
+          mọi nền tảng mà bạn yêu cầu từ WordPress, Laravel, React, React Native, Node JS,...
+        </div>
+      </div>
+    `);
+  };
+
+  const applyContentDesign = () => {
+    $(".about-content").empty();
+    $(".about-content").append(`
+      <div class="content w3-animate-zoom">
+        <div class="title">
+          Chuẩn UI-UX
+        </div>
+        <div class="descrition">
+          Trải qua nhiều năm nghiên cứu, ACTECH
+          tự tin là đơn vị thiết kế
+          website chuẩn giao diện và trải nghiệm người dùng UX/UI. Thiết kế website có giao diện đẹp, bắt mắt
+          giúp thu hút khách hàng, trải nghiệm người dùng được nghiên cứu và tối ưu phù hợp với hành vi mua sắm
+          của người Việt Nam giúp tăng tỷ lệ chuyển đổi cho website của bạn.
+        </div>
+      </div>
+    `);
+  };
+  
+  $("#btn-seo").click(applyContentSeo);
+  $("#btn-speed").click(applyContentSpeed);
+  $("#btn-feature").click(applyContentFeature);
+  $("#btn-security").click(applyContentSecurity);
+  $("#btn-administration").click(applyContentAdministration);
+  $("#btn-connect").click(applyContentConnect);
+  $("#btn-platform").click(applyContentPlatform);
+  $("#btn-design").click(applyContentDesign);
+
 })(jQuery);
