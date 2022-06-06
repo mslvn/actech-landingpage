@@ -5731,6 +5731,252 @@ hero-btn {
   }
 }
 
+.wapper-design-web {
+  margin-top: 80px;
+}
+
+.wapper-design-web .web-title {
+  text-align: center;
+}
+
+.wapper-design-web .web-title h2.title {
+  color: #2a79ff;
+  font-size: 36px;
+}
+
+.wapper-design-web .web-title p.description {
+  font-size: 22px;
+  color: #555;
+}
+
+.wapper-design-web .web-content {
+  margin: 50px 0;
+}
+
+.wapper-design-web .web-content .lits-items .item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #2a79ff;
+  border-radius: 6px;
+  padding: 20px 2px;
+}
+
+.wapper-design-web .web-content .lits-items .item a:hover {
+  background-color: #2a79ff;
+}
+
+.wapper-design-web .web-content .lits-items .item a:hover .img-1 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wapper-design-web .web-content .lits-items .item a:hover .img-2 {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.wapper-design-web .web-content .lits-items .item a:hover p {
+  color: #fff;
+}
+
+.wapper-design-web .web-content .lits-items .item a .item-img {
+  position: relative;
+  overflow: hidden;
+  height: 50px;
+  width: 100%;
+}
+
+.wapper-design-web .web-content .lits-items .item a .item-img .img {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  height: 100%;
+}
+
+.wapper-design-web .web-content .lits-items .item a .item-img .img-2 {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wapper-design-web .web-content .lits-items .item a p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  color: #1d262d;
+  margin: 0;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  height: 40px;
+  padding-top: 5px;
+}
+
+.wapper-design-web .web-content .list-web-templete {
+  margin-top: 50px;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item {
+  position: relative;
+  border: 1px solid transparent;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 12px 2px #e4ecf0;
+          box-shadow: 0px 0px 12px 2px #e4ecf0;
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .details {
+  text-align: center;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .details h3 {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 5px 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .details h3:hover {
+  color: #2a79ff;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .theme-item-pack {
+  position: absolute;
+  top: -15px;
+  right: 10px;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .theme-item-pack .theme-package-pro {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff7b02), to(#ffb33a));
+  background-image: linear-gradient(to right, #ff7b02, #ffb33a);
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .theme-item-pack .theme-package-vip {
+  width: 50px;
+  height: 30px;
+  border-radius: 5px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#5e76eb), to(#a35df3));
+  background-image: linear-gradient(to right, #5e76eb, #a35df3);
+  color: #fff;
+  line-height: 30px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .actions {
+  position: absolute;
+  top: 30%;
+  display: block;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  right: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .actions .view-all, .wapper-design-web .web-content .list-web-templete .theme-item .actions .view-demo {
+  display: inline-block;
+  height: 40px;
+  left: 50%;
+  line-height: 38px;
+  margin-left: -60px;
+  position: absolute;
+  width: 140px;
+  line-height: 40px;
+  top: 0;
+  color: #fff !important;
+  border-radius: 20px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#0077fb), to(#00b1e5));
+  background-image: linear-gradient(to right, #0077fb, #00b1e5);
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .actions .view-demo {
+  top: 60px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff7b02), to(#ffb33a)) !important;
+  background-image: linear-gradient(to right, #ff7b02, #ffb33a) !important;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .image {
+  position: relative;
+  overflow: hidden;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .image .mask-brg {
+  display: block;
+  float: left;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0;
+  -webkit-transition: ease all 0.5s;
+  transition: ease all 0.5s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item .image img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center top;
+     object-position: center top;
+  outline: #e5e5e5 solid 1px;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  margin: auto;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item:hover .actions {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item:hover .mask-brg {
+  background: #aac9ff;
+  opacity: .5;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item:hover h3 {
+  color: #2a79ff;
+}
+
+.wapper-design-web .web-content .list-web-templete .theme-item:hover img {
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+}
+
 .home-blog-area .home-blog-single .blog-img {
   overflow: hidden;
   border-radius: 6px;
