@@ -3623,12 +3623,18 @@ hero-btn {
     width: 100%;
     margin-top: 30px;
   }
+  .social_icon{
+	font-size: 10px;
+  }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   .categories-area .col-categories {
     width: 50%;
     margin-top: 30px;
+  }
+  .social_icon{
+	font-size: 20px;
   }
 }
 
@@ -3637,6 +3643,9 @@ hero-btn {
     width: 33.333333%;
     margin-top: 30px;
   }
+  .social_icon{
+	font-size: 30px;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
@@ -3644,11 +3653,17 @@ hero-btn {
     width: 25%;
     margin-top: 30px;
   }
+  .social_icon{
+	font-size: 40px;
+  }
 }
 
 @media only screen and (min-width: 1201px) {
   .categories-area .col-categories {
     width: 20%;
+  }
+  .social_icon{
+	font-size: 50px;
   }
 }
 
