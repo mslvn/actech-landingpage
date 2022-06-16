@@ -9029,25 +9029,51 @@ del {
 }
 /*# sourceMappingURL=style.css.map */
 
-/* Contact */
-.officebox {
-  border: lightskyblue;
-  border-style: solid;
-  margin-top: 20px;
-  padding-left: 15px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+
+/* Card (Power Area) - Index Page */
+.box_card {
+	box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+	border-radius: calc(var(--curve) * 0.5px);
+	padding: 10px 0px 10px 10px;
+	height: 160px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.box_card:hover {
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+  transform: scale(1.01);
+}
+.box_card span, p {
+	color: white;
 }
 .box-title {
-  font-weight: 400;
-  color: cornflowerblue;
+  font-weight: 500;
 }
 .box-icon {
-  color: crimson;
+  color: crimson!important;
 }
-/* End Box Index Page */
+.card-1 {
+  background: radial-gradient(#1fe4f5, #3fbafe);
+}
 
-/* Card Index Page */
+.card-2 {
+  background: radial-gradient(#fbc1cc, #fa99b2);
+}
+
+.card-3 {
+  background: radial-gradient(#76b2fe, #b69efe);
+}
+
+.card-4 {
+  background: radial-gradient(#60efbc, #58d5c9);
+}
+
+.card-5 {
+  background: radial-gradient(#f588d8, #c0a3e5);
+}
+/* End Card (Power Area) - Index Page */
+
+/* Card (Open Properties) - Index Page */
 :root {
   --surface-color: #fff;
   --curve: 40;
@@ -9162,7 +9188,7 @@ del {
   -webkit-line-clamp: 3;
   overflow: hidden;
 }    
-/* End Card Index Page */
+/* End Card (Open Properties) - Index Page */
 
 /* Transfrom Skew - Index Page */
 .tilesWrap {
@@ -9191,7 +9217,7 @@ del {
 	margin: 0;
 	position: absolute;
 	opacity: 0.2;
-	top: 50px;
+	top: 100px;
 	right: 10px;
 	transition: all 0.3s ease-in-out;
 }
