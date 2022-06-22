@@ -1,0 +1,14 @@
+{
+    "name": "AC TECH",
+    "short_name": "AC",
+    "icons": [
+        {
+            "src": "/assets/img/logo/logo ACTECH-01.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#000000",
+    "display": "standalone"
+}

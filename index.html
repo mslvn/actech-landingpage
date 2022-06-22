@@ -59,26 +59,14 @@
   <!-- Preloader Start -->
   <header>
     <!-- Header Start -->
-	<div w3-include-html="main_header.html"></div>
+	<div w3-include-html="main_header"></div>
     <!-- Header End -->
   </header>
   <main>
-    <div class="container content-btn-fix-small">
-      <div class="row">
-        <div class="col-6">
-          <a href="#" class="btn banner-btn d-lg-none btn-fix-small btn-fix-small-register">
-            Đăng kí
-            <i class="fas fa-angle-double-right btn-arrow ml-2"></i>
-          </a>
-        </div>
-        <div class="col-6">
-          <a href="#" class="btn banner-btn d-lg-none btn-fix-small btn-fix-small-login">
-            Đăng nhập
-            <i class="fas fa-angle-double-right btn-arrow ml-2"></i>
-          </a>
-        </div>
-      </div>
-    </div>
+    <!-- Mobile Register Button Start -->
+    <div w3-include-html="main_register"></div>
+    <!-- Mobile Register Button End -->
+	  
     <!--? slider Area Start-->
     <div class="slider-area">
       <div class="slider-active">
@@ -96,7 +84,7 @@
                   </div>
                   <div class="banner-content-btn">
                     <p class="btn banner-btn">
-					<a href="technologyAdmin.html">Công nghệ số hóa - Quản trị thông minh</a>
+					<a href="technologyAdmin">Công nghệ số hóa - Quản trị thông minh</a>
                     </p>
                   </div>
                 </div>
@@ -130,27 +118,27 @@
 				<li class="col-sx-12 col-lg-2 col-md-6 mx-2">
 					<h2>A</h2>
 					<h3>Công nghệ quản trị thông minh</h3>
-					<a href="technologyAdmin.html"><button>Read more</button></a>
+					<a href="technologyAdmin"><button>Read more</button></a>
 				</li>
 				<li class="col-sx-12 col-lg-2 col-md-6 mx-2">
 					<h2>C</h2>
 					<h3>Sản xuất và gia công phần mềm</h3>
-					<a href="productSoftware.html"><button>Read more</button></a>
+					<a href="productSoftware"><button>Read more</button></a>
 				</li>
 				<li class="col-sx-12 col-lg-2 col-md-6 mx-2">
 					<h2>T</h2>
 					<h3>Cung ứng Công nghệ thông tin</h3>
-					<a href="productOutsource.html"><button>Read more</button></a>
+					<a href="productOutsource"><button>Read more</button></a>
 				</li>
 				<li class="col-sx-12 col-lg-2 col-md-6 mx-2">
 					<h2>E</h2>
 					<h3>Tích hợp hệ thống</h3>
-					<a href="productSystem.html"><button>Read more</button></a>
+					<a href="productSystem"><button>Read more</button></a>
 				</li>
 				<li class="col-sx-12 col-lg-2 col-md-6 mx-2">
 					<h2>C</h2>
 					<h3>Thiết kế mobile application</h3>
-					<a href="applicationService.html"><button>Read more</button></a>
+					<a href="applicationService"><button>Read more</button></a>
 				</li>
 		    </ul>
           
@@ -180,7 +168,7 @@
                 Đó chính là những tiêu chí hàng đầu để AC TECH giúp các nhà quản trị hoạch định chiến lược rõ ràng,
                 phát huy hết nguồn lực doanh nghiệp cho khách hàng và đối tác.
               </p>
-              <a href="about.html" class="btn about-btn">
+              <a href="about" class="btn about-btn">
                 Tìm hiểu thêm
                 <i class="fas fa-angle-double-right btn-arrow ml-2"></i>
               </a>
@@ -469,121 +457,9 @@
     </div>
 	<!-- Power Area End -->
 	
-    <!--? contact-form start -->
-    <section class="contact-form-area section-bg pt-55 pb-50 fix"
-      data-background="assets/img/gallery/section_bg04.jpg">
-      <div class="container">
-        <div class="row justify-content-end">
-          <!-- Contact wrapper -->
-          <div class="col-xl-8 col-lg-9">
-            <div class="contact-form-wrapper">
-              <!-- From tittle -->
-              <div class="row">
-                <div class="col-lg-12">
-                  <!-- Section Tittle -->
-                  <div class="section-tittle text-center mb-50">
-                    <h2>Đăng kí tư vấn và nhận thông tin ưu đãi</h2>
-                  </div>
-                </div>
-              </div>
-              <!-- form -->
-              <form action="#" class="contact-form">
-                <div class="row">
-                  <div class="col-lg-12">
-                    <div class="select-items">
-                      <select name="select" id="select1">
-                        <option value="">Chọn dịch vụ</option>
-                        <option value="">Công nghệ quản trị thông minh SMT</option>
-                        <option value="">Sản xuất và gia công phần mềm</option>
-                        <option value="">Thiết kế phần mềm theo yêu cầu</option>
-                        <option value="">Cung ứng CNTT</option>
-                        <option value="">Tích hợp hệ thống</option>
-                      </select>
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="input-form">
-                      <input type="text" placeholder="Họ và tên" />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="input-form">
-                      <input type="text" placeholder="Email" />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6">
-                    <div class="input-form">
-                      <input type="text" placeholder="Số điện thoại" />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="input-form">
-                      <input type="text" placeholder="Tên công ty" />
-                    </div>
-                  </div>
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="input-form">
-                      <input type="text" placeholder="Quy mô nhân sự" />
-                    </div>
-                  </div>
-                  <!-- Height Width length -->
-                  <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="input-form">
-                      <input type="text" placeholder="Thành phố" />
-                    </div>
-                  </div>
-                  <!-- Radio Button -->
-                  <!-- <div class="col-lg-12">
-                      <div class="radio-wrapper mb-30 mt-15">
-                        <label>Extra services:</label>
-                        <div class="select-radio">
-                          <div class="radio">
-                            <input
-                              id="radio-1"
-                              name="radio"
-                              type="radio"
-                              checked=""
-                            />
-                            <label for="radio-1" class="radio-label"
-                              >Freight</label
-                            >
-                          </div>
-                          <div class="radio">
-                            <input id="radio-2" name="radio" type="radio" />
-                            <label for="radio-2" class="radio-label"
-                              >Express Delivery</label
-                            >
-                          </div>
-                          <div class="radio">
-                            <input id="radio-4" name="radio" type="radio" />
-                            <label for="radio-4" class="radio-label"
-                              >Insurance</label
-                            >
-                          </div>
-                          <div class="radio">
-                            <input id="radio-5" name="radio" type="radio" />
-                            <label for="radio-5" class="radio-label"
-                              >Packaging</label
-                            >
-                          </div>
-                        </div>
-                      </div>
-                    </div> -->
-                  <!-- Button -->
-                  <div class="col-lg-12">
-                    <a name="submit" href="#" class="btn submit-btn">
-                      Đăng ký
-                      <i class="fas fa-angle-double-right btn-arrow ml-2"></i>
-                    </a>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact-form end -->
+    <!--? Contact-form Start -->
+      <div w3-include-html="main_contactForm"></div>
+      <!-- Contact-form End -->
 
     <!--? Testimonial Start -->
     <div class="testimonial-area testimonial-padding section-bg" data-background="assets/img/gallery/section_bg04.jpg">
@@ -788,7 +664,7 @@
   </main>
   <footer>
     <!--? Footer Start-->
-    <div w3-include-html="main_footer.html"></div>
+    <div w3-include-html="main_footer"></div>
     <!-- Footer End-->
   </footer>
   <!-- Scroll Up -->
@@ -799,6 +675,7 @@
   <!-- JS here -->
   <script src="./assets/js/includeHTML.js"></script>
   
+  <!-- All JS Custom Plugins Link Here here -->
   <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
   <!-- Jquery, Popper, Bootstrap -->
   <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
