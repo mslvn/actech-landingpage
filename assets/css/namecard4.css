@@ -1,0 +1,150 @@
+/*
+IDEA : tilt entire website, remove cursor and  put little FA icons for netwroking and social media etc. Move mouse in any direction lights up that social media!!!?
+*/
+
+html{
+  cursor: default;
+}
+body {
+  background-color: #313131;
+  font-family: open sans;
+}
+.business-card{
+}
+#name {
+  font-size: 36px;
+  font-family: Playfair display;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  text-align: center;
+  color: white;
+  margin-top: 0em;
+  margin-bottom: 0.0em;
+}
+#job {
+  font-size:16px;
+  color: #16bfa1;
+  font-family: Roboto;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.4em;
+  margin-bottom: 0.0em;
+}
+.business-card {
+  position:absolute;
+  width: 500px;
+  height: 310px;
+  left: calc(50vw - 250px);
+  top: calc(50vh - 155px);
+  background-color: #050606;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.prompt{
+  position:absolute;
+  bottom: 0px;
+  left: calc(50vw - 125px);
+  background-color:#555;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #888;
+  color:#313131;
+  border-radius: 15px;
+  width:250px;
+  text-align: center;
+  padding: 5px;
+  
+  
+}
+
+.top {
+  position:absolute;
+  top:0px;
+  height: 50%;
+  width:100%;
+  background: #282828;
+  overflow:hidden;
+  /*background: radial-gradient(at 60% 80%, #484848 , #282828);*/
+}
+.bottom {
+  position:absolute;
+  top:50%;
+  height:50%;
+  width:100%;
+  background-color: white;
+  overflow:hidden;
+}
+.topBackText{
+  width:100%;
+  font-size: 90px;
+  color:black;
+  margin-bottom: -2.0em;
+  text-align:center;
+  opacity:0.1;
+  
+}
+.bottomBackText{
+  width:100%;
+  font-size: 90px;
+  color:black;
+  margin-top: -0.75em;
+  margin-bottom: -0.3em;
+  text-align:center;
+  opacity:0.1;
+}
+
+a {
+  color: #16bfa1;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#aboutMe {
+  padding:0 50px;
+  margin:auto;
+  font-family: open sans;
+  font-size: 13px;
+  text-align : center;
+  color: #666;
+}
+
+.icon {
+  position:absolute;
+  left:calc(50vw - 25px);
+  top:calc(50vh - 25px);
+  width:50px;
+  height:50px;
+  cursor:pointer;
+  opacity: 0.9;
+  z-index: 110;
+}
+
+svg{
+  transition: fill 0.5s;
+  fill: #666;
+}
+.spotify svg:hover {
+  fill: #84bd00;
+}
+.linkedIn svg:hover {
+  fill: #0077B5;
+}
+.facebook svg:hover {
+  fill: #3b5998;
+}
+
+.twitter svg:hover {
+  fill: #00aced;
+}
+.instagram svg:hover {
+  fill: #fd8e2f;
+}
+.codepen svg:hover {
+  fill: white;
+}
+.email svg:hover {
+  fill: #f9bf3b;
+}
+.dribble svg:hover {
+  fill: #ea4c89;
+}
