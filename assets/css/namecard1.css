@@ -15,8 +15,8 @@ body{
 }
 
 .container, figure{
-  width:450px;
-  height: 270px;
+  width:600px;
+  height: 400px;
 }
 
 .container{
@@ -33,7 +33,7 @@ body{
 }
 
 figure{
-  background: #2e5d5a;
+  background: linear-gradient(to right, #5efdfab8, #ff8694);
   color: #fff;
   backface-visibility: hidden;
   overflow: hidden;
@@ -62,6 +62,8 @@ figure img{
   display: block;
   min-height: 100%;
   opacity: 0.7;
+  width: 100%;
+  padding: 25px;
 }
 
 figure .caption {
@@ -241,7 +243,7 @@ figure a{
 
 @media (min-width: 450px) {
   .container{
-    left: 50%;
+    left: 45%;
     margin-left:-225px;
   }
 }

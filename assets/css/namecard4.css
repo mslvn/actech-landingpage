@@ -1,16 +1,11 @@
-/*
-IDEA : tilt entire website, remove cursor and  put little FA icons for netwroking and social media etc. Move mouse in any direction lights up that social media!!!?
-*/
-
 html{
   cursor: default;
 }
 body {
-  background-color: #313131;
+  background-color: #fff6e1;
   font-family: open sans;
 }
-.business-card{
-}
+
 #name {
   font-size: 36px;
   font-family: Playfair display;
