@@ -29,13 +29,13 @@
           </div>
         </header>
         <section>
-          <div class="wapper-info">
+          <div id="wapper-info" class="wapper-info">
             <div class="name-wrapper">
               <h1>Hue Minh</h1>
               <p class="location">UX/UI Designer</p>
             </div>
             <div class="avatar">
-              <img class="avatar-img" src="../assets/img/team/hueminh.jpg" alt="">
+              <img id="img" class="avatar-img" src="../assets/img/team/hueminh.jpg" alt="">
             </div>
           </div>
         </section>
@@ -140,5 +140,19 @@
     <script src="../assets/js/qrcode.js"></script>
     <script src="../assets/js/particles.js"></script>
     <script src="../assets/js/namecard.js"></script>
+
+    <script>
+      const imgWap = document.getElementById("wapper-info");
+      const avatar = document.getElementById("img");
+      imgWap.addEventListener("click", function() {
+        avatar.classList.remove("avatar-img");
+        avatar.classList.add("show-img");
+        setTimeout(() => {
+          avatar.classList.remove("show-img");
+          avatar.classList.add("avatar-img");
+        }, 5000);
+      });
+
+    </script>
   </body>
 </html>

@@ -21,6 +21,7 @@ body {
 .card {
   position: absolute;
   width: 29%;
+  height: 80%;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -47,11 +48,12 @@ header div.linecap-right {
   object-fit: cover;
 }
 .logo-wrapper {
-  height: 320px;
+  height: 30%;
 }
 
 .description {
   margin-top: -10px;
+  padding: 10px 0;
 }
 
 header p.companyname {
@@ -92,16 +94,38 @@ header p.company-description {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: translateX(101%);
-  opacity: 0;
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
   transition: 0.6s;
   border-radius: 6px;
+  opacity: 0;
 }
 
-.wapper-info:hover .avatar-img {
-  transform: translateX(0%);
+.show-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  transition: 0.6s;
+   border-radius: 6px;
   opacity: 1;
 }
+
+/* .wapper-info:hover .avatar-img {
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+} */
 .infos {
   bottom: 5%;
   left: 5%;
@@ -168,14 +192,14 @@ footer div.linecap-right {
   bottom: 10px;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 768px) {
   .card {
     width: 80%;
     height: 72%;
   }
 
   .logo-wrapper {
-    height: 160px;
+    height: 30%;
   }
   .logo-img {
     width: 30%;
@@ -202,7 +226,7 @@ footer div.linecap-right {
     height: 70px;
   }
   .wapper-info {
-    height: 80px;
+    height: 20%;
   }
   .name-wrapper {
     display: flex;
