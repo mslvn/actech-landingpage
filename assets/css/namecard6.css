@@ -171,8 +171,8 @@ header img.avatar {
       object-fit: cover;
   }
   header img.avatar {
-    width: 23%;
-    height: 42%;
+    width: 25%;
+    height: 57%;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -199,11 +199,11 @@ header img.avatar {
       padding: 5px 5px 5px 5px;
   }
   #qrcode {
-    padding-left: 15px;
+    padding-left: 20px;
     padding-top: 10px;
   }
   #qrcode img{
-    height: 48px;
+    height: 40px;
     padding-top: 10px;
   }
 }
