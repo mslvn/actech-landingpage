@@ -20,6 +20,7 @@ body {
 }
 .card {
   position: absolute;
+  width: 40%;
   border-radius: 1rem;
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -41,8 +42,8 @@ header div.linecap-right {
 }
 
 .logo-img {
-  width: 60%;
-  height: 60%;
+  width: 40%;
+  height: 40%;
   object-fit: cover;
 }
 .logo-wrapper {
@@ -66,6 +67,31 @@ header p.company-description {
   color: aliceblue;
   font-weight: 300;
   font-size: 20px;
+}
+
+.wapper-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-wrapper {
+  border-left: solid 1.2rem #389cd7;
+  text-align: left;
+  width: 70%;
+}
+.name-wrapper h1 {
+  margin: 0 0 0.35rem 7px;
+}
+.name-wrapper p {
+  margin: 0 0 0.35rem 7px;
+}
+.avatar {
+  width: 30%;
+}
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .infos {
   bottom: 5%;
@@ -116,16 +142,7 @@ footer div.linecap-right {
   padding: 10px 1rem 0.5rem 20px;
   text-align: left;
 }
-.name-wrapper {
-  border-left: solid 1.2rem #389cd7;
-  text-align: left;
-}
-.name-wrapper h1 {
-  margin: 0 0 0.35rem 7px;
-}
-.name-wrapper p {
-  margin: 0 0 0.35rem 7px;
-}
+
 #qrcode {
   padding: 20px 40px 20px 440px;
 }
@@ -163,5 +180,20 @@ footer div.linecap-right {
   }
   #qrcode {
     padding: 0;
+  }
+  .wapper-info {
+    height: 80px;
+  }
+  .name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .name-wrapper h1 {
+    font-size: 23px;
+  }
+  .name-wrapper p {
+    font-size: 20px;
   }
 }
