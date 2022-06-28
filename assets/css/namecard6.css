@@ -233,7 +233,7 @@ header img.avatar {
     padding-left: 15px;
     padding-top: 10px;
   }
-  #qrcode img{
+  #qrcode canvas {
     height: 48px;
     padding-top: 10px;
   }
