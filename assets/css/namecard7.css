@@ -26,7 +26,7 @@ body {
   box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.2);
   overflow: hidden;
   text-align: center;
-  background: #85858580;
+  background: #85858529;
 }
 header div.linecap {
   display: flex;
@@ -58,14 +58,14 @@ header div.linecap-right {
 
 header p.companyname {
   margin: 0;
-  color: aliceblue;
+  color: #22adff;
   font-weight: 600;
   font-size: 30px;
   margin-bottom: 10px;
 }
 header p.company-description {
   margin: 0;
-  color: aliceblue;
+  color: #22adff;
   font-weight: 300;
   font-size: 20px;
 }
@@ -82,9 +82,11 @@ header p.company-description {
 }
 .name-wrapper h1 {
   margin: 0 0 0.35rem 7px;
+  color: coral;
 }
 .name-wrapper p {
   margin: 0 0 0.35rem 7px;
+  color: #22adff;
 }
 .avatar {
   width: 30%;
@@ -157,20 +159,6 @@ header p.company-description {
   text-decoration: none;
   text-align: left;
 }
-
-footer div.linecap {
-  display: flex;
-}
-footer div.linecap-left {
-  width: 50%;
-  height: 20px;
-  background-color: #0b2b3e;
-}
-footer div.linecap-right {
-  width: 50%;
-  height: 20px;
-  background-color: #22adff;
-}
 .card section {
   font-size: 40px;
   padding: 10px 1rem 0.5rem 20px;
@@ -235,10 +223,10 @@ footer div.linecap-right {
     justify-content: center;
   }
   .name-wrapper h1 {
-    font-size: 23px;
+    font-size: 24px;
   }
   .name-wrapper p {
-    font-size: 20px;
+    font-size: 18px;
   }
   .infos > div p {
     font-size: 12px;

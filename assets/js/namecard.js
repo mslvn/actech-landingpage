@@ -1,7 +1,9 @@
 $(document).ready(function() {
-
+    var username = window.location.pathname.split("/namecard/")[1];
+    $("title").text("AC Tech - "+ username.split(1)[0])
+    var qrstr = username.includes(1) && username.split(1)[0] || username+"1";
     var qrcode = new QRCode("qrcode", {
-        text: window.location.href,
+        text: window.location.origin+"/namecard/"+qrstr,
         width: 72,
         height: 72,
         colorDark : "#4691f6",

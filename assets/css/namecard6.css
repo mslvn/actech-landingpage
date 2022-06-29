@@ -49,7 +49,7 @@ header img.banner {
   height: 115%;
   object-fit: cover;
   grid-area: 1 / 1 / 3 / 5;
-  filter: saturate(0.2);
+  filter: saturate(0.7);
 }
 header img.logo {
   width: 95%;
@@ -79,12 +79,10 @@ header img.avatar {
 .card section h1 {
   margin: 0 0 0.35rem 0;
   color: cornflowerblue;
-  font-family: 'Bungee Shade', cursive;
 }
 
 .card section p.location {
   font-size: 1.5rem;
-  font-family: Monoton, cursive;
   margin: 0;
   color: gray;
 }
@@ -155,16 +153,19 @@ header img.avatar {
   }
   header img.banner {
       width: 100%;
-      height: 75%;
+      height: 100%;
   }
   header img.logo {
       width: 95%;
       height: 50%;
   }
   header img.avatar {
-      width: 90%;
-      height: 175%;
+      width: 100%;
+      height: 200%;
       grid-area: 2 / 2 / 2 / 3;
+  }
+  .card section h1 {
+    font-size: 40px;
   }
   .card section {
       font-size: 2rem;
@@ -191,6 +192,10 @@ header img.avatar {
     padding-top: 10px;
   }
   #qrcode canvas {
+    height: 48px;
+    padding-top: 10px;
+  }
+  #qrcode img {
     height: 48px;
     padding-top: 10px;
   }
