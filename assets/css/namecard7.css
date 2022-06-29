@@ -79,6 +79,7 @@ header p.company-description {
   border-left: solid 1.2rem #389cd7;
   text-align: left;
   width: 70%;
+  max-height: 120px;
 }
 .name-wrapper h1 {
   margin: 0 0 0.35rem 7px;
