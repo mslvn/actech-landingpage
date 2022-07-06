@@ -224,10 +224,10 @@ header p.company-description {
     justify-content: center;
   }
   .name-wrapper h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
   .name-wrapper p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .infos > div p {
     font-size: 12px;
