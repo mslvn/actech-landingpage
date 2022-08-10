@@ -4608,7 +4608,7 @@ hero-btn {
 
 .technology-admin .technology-image img {
   width: 100%;
-  height: 400px;
+  height: 600px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transform: scale(1);
@@ -4795,7 +4795,7 @@ hero-btn {
 .product-managerment .product-managerment-content .product-managerment-title {
   background-color: #000000d9;
   padding: 90px 30px;
-  height: 400px;
+  height: 460px;
   border-radius: 6px;
 }
 
@@ -4846,7 +4846,7 @@ hero-btn {
 
 .product-managerment .product-managerment-content .product-managerment-image img {
   width: 100%;
-  height: 400px;
+  height: 460px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transform: scale(1);
@@ -4923,7 +4923,7 @@ hero-btn {
 
 .system-manager-content-image img {
   width: 100%;
-  height: 400px;
+  height: 430px;
   -o-object-fit: cover;
      object-fit: cover;
   -webkit-transform: scale(1);
@@ -4944,7 +4944,7 @@ hero-btn {
   border-radius: 6px;
   padding: 30px;
   text-align: center;
-  height: 400px;
+  height: 430px;
 }
 
 .system-manager-content .system-manager-title::after {
@@ -5002,6 +5002,113 @@ hero-btn {
   }
 }
 
+/* dms manager*/
+.dms-manager {
+  margin-top: 120px;
+}
+
+@media (max-width: 575px) {
+  .dms-manager {
+    margin-top: 60px;
+  }
+}
+
+.dms-manager-content {
+  background-color: #fff;
+}
+
+.dms-manager-content-image {
+  top: 100px;
+  margin-left: 0;
+  overflow: hidden;
+}
+
+.dms-manager-content-image:hover > img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.dms-manager-content-image img {
+  width: 100%;
+  height: 560px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: all 0.5s ease-out 0s;
+  transition: all 0.5s ease-out 0s;
+}
+
+@media (max-width: 575px) {
+  .dms-manager-content-image img {
+    height: 200px;
+  }
+}
+
+.dms-manager-content .dms-manager-title {
+  background-color: #000000d9;
+  color: #fff;
+  border-radius: 6px;
+  padding: 30px;
+  text-align: center;
+  height: 560px;
+}
+
+.dms-manager-content .dms-manager-title::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  right: 15px;
+  width: 0;
+  height: 100%;
+  border-right: 5px solid #c9252b;
+  border-radius: 6px;
+  -webkit-transition: all 0.6s ease-out 0s;
+  transition: all 0.6s ease-out 0s;
+}
+
+.dms-manager-content .dms-manager-title:hover::after {
+  height: 0;
+  width: 95%;
+  border-top: 8px solid #c9252b;
+}
+
+.dms-manager-content .dms-manager-title .dms-manager-description p {
+  color: #fff;
+}
+
+@media (max-width: 575px) {
+  .dms-manager-content .dms-manager-title .dms-manager-description p {
+    color: #000;
+  }
+}
+
+.dms-manager-content .dms-manager-title .dms-manager-description-1, .dms-manager-content .dms-manager-title .dms-manager-description-2, .dms-manager-content .dms-manager-title .dms-manager-description-3, .dms-manager-content .dms-manager-title .dms-manager-description-4, .dms-manager-content .dms-manager-title .dms-manager-description-5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: justify;
+}
+
+.dms-manager-content .dms-manager-title .dms-manager-description-1 i, .dms-manager-content .dms-manager-title .dms-manager-description-2 i, .dms-manager-content .dms-manager-title .dms-manager-description-3 i, .dms-manager-content .dms-manager-title .dms-manager-description-4 i, .dms-manager-content .dms-manager-title .dms-manager-description-5 i {
+  padding-right: 15px;
+  padding-top: 15px;
+}
+
+@media (max-width: 575px) {
+  .dms-manager-content .dms-manager-title {
+    background: none;
+    color: #000;
+    padding: 0;
+  }
+  .dms-manager-content .dms-manager-title .section-tittle {
+    margin: 30px 0;
+  }
+  .dms-manager-content .dms-manager-title::after {
+    display: none;
+  }
+}
+/* dms manager end css*/
 .work-managerment {
   position: relative;
   margin-top: 120px;
