@@ -1,3 +1,12 @@
+.youtube_ifame{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    .iframe{
+        width: 300%;
+    }
+}
 
 .contact-form-area {
     .contact-form-wrapper{
