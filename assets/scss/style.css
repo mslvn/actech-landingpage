@@ -374,6 +374,7 @@ hr {
 .youtube_iframe iframe{
   width: 100%;
   height: 100%;
+  border-radius: 20px;
 }
 
 @media only screen and (max-width:575px){
@@ -385,8 +386,8 @@ hr {
     margin-top: 100px;
   }
   .youtube_iframe iframe{
-    width: 300px;
-    height: 200px;
+    width: 500px;
+    height: 300px;
   }
   .window_form{
     display:inline-flex;
@@ -421,209 +422,111 @@ hr {
   }
 } */
 
-/* reason_choice*/
-
-.tilte_reason_choice{
-  color: #fff;
-  position: relative;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  white-space: nowrap;
+/* about_group3*/
+.about-group-3 {
+  margin-bottom: 4rem;
 }
-.tilte_reason_choice:after{
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 4px;
-  left: 0;
-  bottom: -8px;
-  background: #fff;
-  transition: 500ms all ease-in-out;
+.about-group-3 .center-layout-2 {
+  display: flex;
+  justify-content: space-between;
 }
-
-.content_reason_choice{
-  color: #fff;
-  position: relative;
-  left: 50%;
-  top: 20%;
-  transform: translateX(-50%);
-  opacity: 0;
-  padding-left: 20px;
-  padding-bottom:40px;
-  /* white-space: nowrap; */
+.center-layout-2 {
+  max-width: 1044px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 65px
 }
-.content_reason_choice:after{
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 4px;
-  left: 0;
-  bottom: -8px;
-  background: #fff;
-  transition: 500ms all ease-in-out;
-}
-.content_reason_choice:hover{
-  opacity: 1;
+.about-group-3__title {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: rgba(0,0,0,.5);
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
-@media (max-width: 1230px){
-  .content_reason_choice{
-    font-size: 13px;
-  }
-}
-@media (max-width: 1000px){
-  .content_reason_choice{
-    font-size: 12px;
-  }
-  .reason-benefit{
-    min-height: 530px;
-  }
-}
-@media (max-width: 925px){
-  .content_reason_choice{
-    font-size: 11px;
-  }
-  .reason-benefit{
-    min-height: 530px;
-  }
-}
-@media (max-width: 848px){
-  .content_reason_choice{
-    font-size: 10px;
-  }
-  .reason-benefit{
-    min-height: 530px;
-  }
-}
-@media (max-width: 780px){
-  .content_reason_choice{
-    font-size: 9px;
-  }
-  .reason-benefit{
-    min-height: 530px;
-  }
-}
-@media (max-width: 704px){
-  .content_reason_choice{
-    font-size: 8px;
-  }
-  .reason-benefit{
-    min-height: 550px;
-  }
-}
-@media (max-width: 620px){
-  .content_reason_choice{
-    font-size: 7px;
-  }
-  .reason-benefit{
-    min-height: 570px;
-  }
-}
-
-
-
-a.cta {
-  display: block;
-  position: absolute;
-  height: 50px;
-  line-height: 50px;
-  width: 120px;
-  text-align: center;
-  color: #fff;
-  text-decoration: none;
-  left: 50%;
-  bottom: 20%;
-  transform: translateX(-50%);
-  border: 2px solid #fff;
-  font-size: 0.75em;
-  font-weight: 700;
-  letter-spacing: 1px;
+.about-group-3__name {
+  font-family:  "SVNAptima";
+  font-size: 36px;
+  font-weight: 100;
+  color: #000;
+  margin-bottom: 1.5rem;
   text-transform: uppercase;
 }
-a.cta:before {
-  content: "";
-  background: #fff;
-  height: 0;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  transition: 300ms all ease-in-out;
-}
-a.cta:hover:before {
-  height: 4px;
+
+.about-group-3__list {
+  font-size: .875rem;
+  font-family: "SVNAptima";
+  color: #000;
+  padding-left: 15px;
+  margin-bottom: 3rem;
 }
 
-.reason-benefit {
-  width: 100%;
-  min-height: 500px;
-  position: relative;
+.about-group-3__left {
+  width: 38.0859375%;
+  margin-top: 3rem;
 }
-.reason-benefit .one-half {
-  position: absolute;
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-}
-.reason-benefit .one-half.left {
-  left: 0;
-  background: url("http://andrewerrico.com/jura-panorama.jpg") center center no-repeat;
-  background-size: cover;
-}
-.reason-benefit .one-half.left:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 0, 120, 0.5);
-  position: absolute;
-}
-.reason-benefit .one-half.right {
-  right: 0;
-  background: url("https://images.unsplash.com/photo-1517134191118-9d595e4c8c2b") center center no-repeat;
-  background-size: cover;
-}
-.reason-benefit .one-half.right:before {
-  content: "";
-  width: 100%;
-  height: 100%;
-  background: rgba(25, 120, 220, 0.5);
-  position: absolute;
-}
-.reason-benefit .one-half.left, .reason-benefit .one-half.right {
-  transition: 500ms all ease-in-out;
-}
-.reason-benefit .one-half.left:before, .reason-benefit .one-half.right:before {
-  transition: 500ms all ease-in-out;
-}
-.reason-benefit.left-is-hovered .left {
-  width: 85%;
-}
-.reason-benefit.left-is-hovered .left h1:after {
-  width: 100%;
-}
-.reason-benefit.left-is-hovered .right {
-  width: 15%;
-}
-.reason-benefit.left-is-hovered .right:before {
-  background: rgba(0, 0, 0, 0.65);
-  z-index: 2;
-}
-.reason-benefit.right-is-hovered .right {
-  width: 85%;
-}
-.reason-benefit.right-is-hovered .right h1:after {
-  width: 100%;
-}
-.reason-benefit.right-is-hovered .left {
-  width: 15%;
-}
-.reason-benefit.right-is-hovered .left:before {
-  background: rgba(0, 0, 0, 0.65);
-  z-index: 2;
-} */
 
-/* reason_choice_end*/
+.gs_reveal {
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform, opacity;
+}
+
+
+.about-group-3__right {
+  width: 53.7109375%;
+}
+.about-group-3__right img {
+  border-radius: 15px;
+}
+.about-group-3__list li {
+  margin-bottom: 8px;
+}
+img {
+  max-width: 100%;
+}
+
+.hbtn{
+  padding: 0.625rem 2rem !important;
+  border-radius: 5rem !important;
+  font-family: "Montserrat" !important;
+  font-weight: 700 !important;
+  color: #fff !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  background-size: 400% auto !important;
+  background: linear-gradient(270deg, #70efd1 0, #1bc1c1 100%) !important;
+  -webkit-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+  border: 0 !important;
+}
+@media screen and (max-width: 992px){
+.about-group-3__left {
+    margin-top: 0;
+}
+}
+
+@media screen and (max-width: 768px){
+  .about-group-3 .center-layout-2 {
+      flex-direction: column-reverse;
+  }
+  .about-group-3__left {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .about-group-3__right {
+    width: 100%;
+  }
+  .about-group-3__right img {
+    width: 100%;
+    padding-top:87px
+  } 
+}
+
+/* about_group3_end*/
 
 .section-padding {
   padding-top: 120px;
