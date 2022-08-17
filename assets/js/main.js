@@ -6,7 +6,7 @@
     $("#preloader-active").delay(450).fadeOut("slow");
     $("body").delay(450).css({
       overflow: "visible",
-    });
+    });    
   });
 
   /* 2. sticky And Scroll UP */
