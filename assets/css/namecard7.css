@@ -180,8 +180,60 @@ header p.company-description {
   right: 10px;
   bottom: 10px;
 }
+@media screen and (max-width: 375px) {
+  .card {
+    width: 76%;
+    height: 82%;
+  }
 
-@media screen and (max-width: 768px) {
+  .logo-wrapper {
+    height: 30%;
+  }
+  .logo-img {
+    width: 30%;
+    height: 30%;
+  }
+  .card section {
+    font-size: 30px;
+  }
+  .wapper-q-code {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .qrcode {
+    padding: 15px 10px;
+  }
+  #qrcode {
+    padding: 0;
+  }
+
+  #qrcode img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: -14px;
+  }
+  .wapper-info {
+    height: 20%;
+  }
+  .name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .name-wrapper h1 {
+    font-size: 20px;
+  }
+  .name-wrapper p {
+    font-size: 16px;
+  }
+  .infos > div p {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width:376px) and (max-width: 575px) {
   .card {
     width: 80%;
     height: 72%;
@@ -213,6 +265,7 @@ header p.company-description {
   #qrcode img {
     width: 70px;
     height: 70px;
+    margin-bottom: -14px;
   }
   .wapper-info {
     height: 20%;
@@ -231,5 +284,116 @@ header p.company-description {
   }
   .infos > div p {
     font-size: 12px;
+  }
+}
+
+
+@media screen and (min-width: 575px) and (max-width: 768px) {
+  .card {
+    width: 71%;
+    height: 71%;
+    margin-bottom:100px;
+  }
+
+  .logo-wrapper {
+    height: 30%;
+  }
+  .logo-img {
+    width: 30%;
+    height: 30%;
+  }
+  .card section {
+    font-size: 30px;
+  }
+  .wapper-q-code {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .qrcode {
+    padding: 15px 10px;
+  }
+  #qrcode {
+    padding: 0;
+  }
+
+  #qrcode img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  .wapper-info {
+    height: 20%;
+  }
+  .name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .name-wrapper h1 {
+    font-size: 48px;
+  }
+  .name-wrapper p {
+    font-size: 30px;
+  }
+  .infos > div p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width:769px) and (max-width: 820px) {
+  .card {
+    width: 63%;
+    height: 65%;
+    margin-bottom: 252px;
+  }
+
+  .logo-wrapper {
+    height: 30%;
+  }
+  .logo-img {
+    width: 30%;
+    height: 30%;
+  }
+  .card section {
+    font-size: 30px;
+  }
+  .wapper-q-code {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .qrcode {
+    padding: 15px 10px;
+  }
+  #qrcode {
+    padding: 0;
+  }
+
+  #qrcode img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+  .wapper-info {
+    height: 20%;
+  }
+  .name-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .name-wrapper h1 {
+    font-size: 48px;
+  }
+  .name-wrapper p {
+    font-size: 30px;
+  }
+  .infos > div p {
+    font-size: 20px;
   }
 }
