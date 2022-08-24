@@ -196,6 +196,12 @@ p {
   font-weight: normal;
 }
 
+#Select_service-contactForm{
+  margin-bottom: 25px;
+  padding: 10px;
+  width: 100%;
+}
+
 .bg-img-1 {
   background-image: url(../img/slider/slider-img-1.jpg);
 }
@@ -742,7 +748,7 @@ img {
 }
 .c-services__item h3 {
   color: var(--color-brand-primary);
-  font-size: var(--s1);
+  font-size: 25px;
   line-height: 1.2;
 }
 .c-services__item:after {
