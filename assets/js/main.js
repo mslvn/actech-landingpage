@@ -62,8 +62,8 @@
       }
     );
     BasicSlider.slick({
-      autoplay: false,
-      autoplaySpeed: 4000,
+      autoplay: true,
+      autoplaySpeed: 5000,
       dots: false,
       fade: true,
       arrows: false,
@@ -75,8 +75,8 @@
         {
           breakpoint: 1024,
           settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
+            slidesToShow: 5,
+            slidesToScroll: 5,
             infinite: true,
           },
         },
