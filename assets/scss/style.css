@@ -3403,28 +3403,28 @@ hero-btn {
 }
 
 .testimonial-padding {
-  padding-top: 190px;
-  padding-bottom: 170px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .testimonial-padding {
-    padding-top: 190px;
-    padding-bottom: 170px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .testimonial-padding {
-    padding-top: 70px;
-    padding-bottom: 60px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .testimonial-padding {
-    padding-top: 60px;
-    padding-bottom: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
   }
 }
 
