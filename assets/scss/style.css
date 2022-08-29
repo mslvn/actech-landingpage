@@ -1555,7 +1555,7 @@ hr {
 #drop-menu .row-drop-menu .col-drop-menu .header .name {
   position: relative;
   font-weight: 500;
-  font-size: 26px;
+  font-size: 20px;
   line-height: 30px;
   letter-spacing: .02em;
   text-transform: uppercase;
@@ -1588,16 +1588,17 @@ hr {
   height: 40px;
 }
 #drop-menu .row-drop-menu .col-drop-menu .list-drop .drop .icon img {
-  width: 32px;
-  height: 32px;
+  width: 42px;
+  height: 40px;
 }
 #drop-menu .row-drop-menu .col-drop-menu .list-drop .drop .name {
   font-size: 15px;
   font-weight: 500;
   display: block;
-  padding-bottom: 3px;
+  padding-bottom: 20px;
   padding-left: 8px;
   color: #1c97de;
+  margin-top: 8px;
 }
 #drop-menu .row-drop-menu .col-drop-menu .list-drop .drop .infor {
   font-size: 13px;
