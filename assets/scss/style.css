@@ -535,6 +535,21 @@ hr {
 
 /* about_group3_end*/
 
+/* arrow */
+
+.slick-next .slick-arrow{
+  background: #fff;
+  display: inline-block;
+  border: none;
+  color: blue;
+}
+.slick-prev .slick-arrow{
+  background: #fff;
+  display: inline-block;
+  border: none;
+  color: blue;
+}
+
 /* c-section-start */
 
 .c-section {
