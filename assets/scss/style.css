@@ -373,9 +373,10 @@ hr {
 }
 
 .youtube_iframe iframe{
-  width: 100%;
+  width: 80%;
   height: 100%;
   border-radius: 20px;
+  margin-left: 200px;
 }
 
 @media only screen and (min-width: 200px) and (max-width: 559px){
@@ -455,10 +456,10 @@ hr {
   text-transform: uppercase;
   font-size: 24px;
   font-family: "Montserrat";
-  color: rgba(0,0,0,.5);
+  color: #149bfd;
   font-weight: bold;
   margin-bottom: 0.5rem;
-  padding-left: 25px;
+  /* padding-left: 25px; */
 }
 
 .about-group-3__name {
@@ -471,13 +472,13 @@ hr {
 }
 
 .about-group-3__list {
-  font-size: 1.125rem;
+  font-size: 1.057rem;
   font-family: "SVNAptima";
   color: #000;
-  padding-left: 50px;
+  padding-left: 20px;
   margin-bottom: 3rem;
   text-align: justify;
-  width: 600px;
+  /* width: 600px; */
 }
 
 .about-group-3__left {
@@ -1454,16 +1455,15 @@ hr {
   transition: filter 200ms linear, transform 200ms linear;
 }
 .card__background-1{
-  background-image: linear-gradient(45deg,rgb(36, 36, 171,0),rgb(92, 189, 92,0)),url(../img/gallery/2133348.jpg); 
+  background-image: linear-gradient(45deg,rgba(19, 23, 49, 0.7),rgba(91, 189, 920,0.3)),url(../img/gallery/2133348.jpg);
 }
 .card__background-2{
-  background-image: linear-gradient(45deg,rgb(36, 36, 171,0),rgb(92, 189, 92,0)),url(../img/gallery/2110.w013.n001.549B.p30.549\ [Converted].jpg);
-}
+  background-image: linear-gradient(45deg,rgba(19, 23, 49, 0.7),rgba(91, 189, 920,0.3)),url(../img/gallery/2110.w013.n001.549B.p30.549\ [Converted].jpg);}
 .card__background-3{
-  background-image: linear-gradient(45deg,rgb(36, 36, 171,0),rgb(92, 189, 92,0)),url(../img/gallery/25256_crop.jpg);
+  background-image: linear-gradient(45deg,rgba(19, 23, 49, 0.7),rgba(91, 189, 920,0.3)),url(../img/gallery/25256_crop.jpg);
 }
 .card__background-4{
-  background-image: linear-gradient(45deg,rgb(36, 36, 171,0),rgb(92, 189, 92,0)),url(../img/gallery/3150373.jpg);
+  background-image: linear-gradient(45deg,rgba(19, 23, 49, 0.7),rgba(91, 189, 920,0.3)),url(../img/gallery/3150373.jpg);
 }
 
 .card_technology_hero_section:hover .card__background-1 .card__background-2 .card__background-3 .card__background-4{
@@ -1478,6 +1478,7 @@ hr {
   /* filter: brightness(0.5) saturate(0) contrast(1.2) blur(20px); */
   background-image: linear-gradient(45deg,rgba(19, 23, 49, 0.7),rgba(91, 189, 920,0.3)),url(../img/gallery/2133348.jpg);
   transform: scale(1.1);
+  opacity: 1;
   box-shadow: 30px 20px 10px -10px gray;
 }
 .card__background-2:hover {
@@ -1559,7 +1560,7 @@ hr {
   box-sizing: border-box;
   position: relative;
   width: 25%;
-  padding: 20px 60px;
+  padding: 25px 0px 25px 100px;
 }
 #drop-menu .row-drop-menu .col-drop-menu .header {
   margin-bottom: 20px;
@@ -1569,14 +1570,14 @@ hr {
 }
 #drop-menu .row-drop-menu .col-drop-menu .header .name {
   position: relative;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 30px;
   line-height: 30px;
   letter-spacing: .02em;
   text-transform: uppercase;
   display: inline-block;
   padding-bottom: 20px;
-  color: #0a73b0;
+  color: #106fb4;
 }
 #drop-menu .row-drop-menu .col-drop-menu .list-drop {
   margin: 0 -10px;
@@ -1612,7 +1613,7 @@ hr {
   display: block;
   padding-bottom: 20px;
   padding-left: 8px;
-  color: #1c97de;
+  color: #505050;
   margin-top: 8px;
 }
 #drop-menu .row-drop-menu .col-drop-menu .list-drop .drop .infor {
@@ -5440,7 +5441,7 @@ hero-btn {
 }
 
 .footer-area .footer-heading .contact-company {
-  color: #c9252b;
+  color: #149bfd;
   font-size: 36px;
   font-weight: 700;
 }
@@ -5480,7 +5481,8 @@ hero-btn {
 }
 
 .footer-area .footer-heading .address p, .footer-area .footer-heading .address a, .footer-area .footer-heading .address span {
-  color: #159bfe;
+  color: black;
+  font-size: 20px;
 }
 
 .footer-area .footer-heading .footer-map {

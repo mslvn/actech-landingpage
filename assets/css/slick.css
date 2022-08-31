@@ -121,8 +121,7 @@
 /* arrow */
 
 button.slick-arrow{
-    background: #fff i;
-    display: inline-block;
+    background: #fff;
     border: none;
     color: blue;
   }
