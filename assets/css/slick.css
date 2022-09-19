@@ -3,7 +3,7 @@
 {
     position: relative;
 
-    display: block;
+    display: flex;
     box-sizing: border-box;
 
     -webkit-user-select: none;
@@ -117,3 +117,11 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+/* arrow */
+
+button.slick-arrow{
+    background: #fff;
+    border: none;
+    color: blue;
+  }
