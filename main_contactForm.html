@@ -17,7 +17,7 @@
 		</div>
 	</div>
 <div class="col-xl-6 col-md-12 col-lg-6 col-sm-6">
-<section
+	<section
 	class="contact-form-area form-register-smt section-bg pt-50 pb-50 fix">
 	<div class="container">
 		<!-- Contact wrapper -->
@@ -28,30 +28,37 @@
 			  <div class="col-lg-12">
 				<!-- Section Tittle -->
 				<div class="section-tittle text-center mb-50">
-				  <h2 class="text-uppercase">
-					Đăng kí tư vấn để trải nghiệm công nghệ quản trị ACTECH
-				  </h2>
+				  <h2 class="text-uppercase" data-mlr-text>Đăng kí tư vấn để trải nghiệm công nghệ quản trị ACTECH</h2>
 				</div>
 			  </div>
 			</div>
+			<script type="text/javascript">
+				var submitted=false;
+			</script>
+			<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){alert('Bạn đã gửi thông tin thành công tới hệ thống!');}" style="display: none;"></iframe>
+			<div class=" wow fadeInRight animated" style="visibility: visible; animation-name: fadeInRight;">
+				<script type="text/javascript">
+					var submitted=false;
+				</script>
+				<iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){window.location='index.html';}" style="display: none;"></iframe>
 			<!-- form -->
-			<form method = "POST" action="https://script.google.com/macros/s/AKfycbylW6u1eaQNa6H9MnpWMtVSpHk2sjI8j3sJLE2O58QcEgddRlybFqtaC9dHcqdXnemwPQ/exec" class="contact-form">
+			<form onsubmit="submitted=true" id="my-form" method = "POST" action="https://script.google.com/macros/s/AKfycbylW6u1eaQNa6H9MnpWMtVSpHk2sjI8j3sJLE2O58QcEgddRlybFqtaC9dHcqdXnemwPQ/exec" class="contact-form">
 			  <div class="row justify-content-center">
 				<div class="col-lg-12">
 				  <div class="select-items">
 					<select name="ChonDichVu"  style="margin-bottom: 25px;padding: 10px;width: 100%; font-size: 15px;" id="select1" required>
-					  <option value="">Chọn dịch vụ</option>
-					  <option  value="1">Công nghệ quản trị thông minh</option>
-					  <option value="2">Thiết kế website</option>
-					  <option value="3">Thiết kế phần mềm</option>
-					  <option value="4">Thiết kế mobile application</option>
-					  <option value="5">Thiết kế app theo yêu cầu</option>
+					  <option value="" data-mlr-text>Chọn dịch vụ</option>
+					  <option  value="1" data-mlr-text>Công nghệ quản trị thông minh</option>
+					  <option value="2"  data-mlr-text>Thiết kế website</option>
+					  <option value="3"  data-mlr-text>Thiết kế phần mềm</option>
+					  <option value="4"  data-mlr-text>Thiết kế mobile application</option>
+					  <option value="5"  data-mlr-text>Thiết kế app theo yêu cầu</option>
 					</select>
 				  </div>
 				</div>
 				<div class="col-lg-6 col-md-6">
 				  <div class="input-form">
-					<input name="HoVaTen"type="text" placeholder="Họ và tên" required />
+					<input name="HoVaTen"type="text" placeholder="Full name" required />
 				  </div>
 				</div>
 				<div class="col-lg-6 col-md-6">
@@ -61,39 +68,85 @@
 				</div>
 				<div class="col-lg-6 col-md-6">
 				  <div class="input-form">
-					<input name="SDT" type="text" placeholder="Số điện thoại" required/>
+					<input name="SDT" type="text" placeholder="Phone Number" required/>
 				  </div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6">
 				  <div class="input-form">
-					<input name="TenCongTy" type="text" placeholder="Tên công ty" required/>
+					<input name="TenCongTy" type="text" placeholder="Company" required/>
 				  </div>
 				</div>
 				<div class="col-lg-6 col-md-6 col-sm-6">
 				  <div class="input-form">
-					<input name="QuyMoNhanSu" type="text" placeholder="Quy mô nhân sự" required/>
+					<input name="QuyMoNhanSu" type="text" placeholder="Company size" required/>
 				  </div>
 				</div>
 				<!-- Height Width length -->
 				<div class="col-lg-6 col-md-6 col-sm-6">
 				  <div class="input-form">
-					<input name="ThanhPho" type="text" placeholder="Thành phố" required/>
+					<input name="ThanhPho" type="text" placeholder="City" required/>
 				  </div>
 				</div>
 				<div class="col-lg-6 mt-4">
-					<button name="submit" type="submit" class="btn submit-btn">
-						Đăng ký 
-						<i class="fas fa-angle-double-right btn-arrow ml-2"></i> 
-					</button>
-					
-				  </a>
+					<button name="submit" type="submit" class="btn submit-btn">Register<i class="fas fa-angle-double-right btn-arrow ml-2"></i> 
+					</button>		
 				</div>
 			  </div>
 			</form>
 		  </div>
 		</div>
 	</div>
-	
+	<!-- <script>
+		window.addEventListener("load", function() {
+		//   const form = document.getElementById('my-form');
+		//   form.addEventListener("submit", function(e) {
+		// 	e.preventDefault();
+		// 	  const data = new FormData(form);
+		// 	  const action = e.target.action;
+		// 	  fetch(action, {
+		// 		  method: 'POST',
+		// 		  body: data,
+		// 	  })
+		// 	  .then(() => {
+		// 		  alert("Success!");
+		// 	  }).catch((err)=>{
+		// 	  console.log(err)
+		// 	})
+		// 	});
+		
+		const form = document.getElementById('my-form');
+              var object = {};
+
+              $('#my-form').submit(function (e) {
+                e.preventDefault();
+                const formData = new FormData(form);
+                formData.forEach((value, key) => {
+                  return (object[key] = value);
+                });
+                const data = JSON.stringify(object);
+
+                const action = e.target.action;
+
+                $.ajax({
+                  type: 'POST',
+                  url: action,
+                  dataType: 'text',
+                  contentType: 'application/json',
+                  cors: true,
+                  secure: true,
+                  headers: {
+                    'Access-Control-Allow-Origin': '*',
+                  },
+                  data: data,
+                  success: function (result) {
+                    window.Location.reload(); // result is an object which is created from the returned JSON
+                  },
+                });
+                return false;
+              });
+		});
+		</script> -->
+
 </section>
 </div>
 </div>
