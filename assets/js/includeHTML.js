@@ -139,3 +139,6 @@ includeHTML();
 // 	},
 // 	"retina_detect": true
 // });
+function afterSubmitForm() {
+	console.log(1);
+}
