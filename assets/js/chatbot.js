@@ -183,7 +183,7 @@ function responseImg(e) {
   //Custom class for styling
   image.classList.add('bot__outputImage');
   //Gets the image
-  image.src = "/assets/img/team/"+e;
+  image.src = "/assets/img/team/"+e+".jpg";
   chatList.appendChild(image);
 
   animateBotOutput()
