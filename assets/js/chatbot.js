@@ -62,14 +62,16 @@ var checkInput = function(input) {
   //Checks all text values in possibleInput
   for(var textVal in possibleInput){
     //If user reacts with "yes" and the previous input was in textVal
-    if(input == "yes" || input == "ok" || input.indexOf("yes") >= 0 || input.indexOf("ok") >= 0 || input == "có" || input.indexOf("có") >= 0 ){
+    if(input == "yes" || input == "ok" || input.indexOf("yes") >= 0 || input.indexOf("ok") >= 0 || input == "có" 
+      || input.indexOf("có") >= 0 || input == "ừ" || input.indexOf("ừ") >= 0){
       if(previousInput == textVal) {
         isReaction = true;
         hasCorrectInput = true;
         botResponse(textVal);
       }
     }
-    if((input == "no" || input == "không" || input == "ko" || input.indexOf("ko") >= 0 || input.indexOf("không") >= 0)  && previousInput == textVal){
+    if((input == "no" || input == "không" || input == "ko" || input.indexOf("ko") >= 0 || input.indexOf("không") >= 0 
+      || input == "đéo" || input.indexOf("đéo") >= 0)  && previousInput == textVal){
       unkwnCommReaction = "Để hiển thị danh sách câu lệnh hãy nhập: ACTee";
       unknownCommand("ACTee rất tiếc khi được nghe điều đó :(")
       unknownCommand(unkwnCommReaction);
