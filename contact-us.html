@@ -91,10 +91,30 @@
           </div>
 		  <!-- <iFrame src="https://incometax.vn/" width="100%" height="1000px" name="the-iFrame" frameborder="0"></iFrame> -->
 		  <div class="row">
-			<div class="col-xl-12 col-lg-12 col-md-12 footer-map">
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.4903144213454!2d105.81883121538469!3d20.972973895055343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135adf663f31ed9%3A0x5112e1bddc759106!2sVinaconex%202!5e0!3m2!1sen!2s!4v1654745775774!5m2!1sen!2s"
-				  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+        <div class="block--background">
+          <div class="chatbot__overview">
+            <ul class="chatlist">
+            <li class="bot__output bot__output--standard">Xin chào, tôi là trợ lý ảo ACTee!</li>
+            <li class="bot__output bot__output--standard">Tôi sẽ giúp bạn hiểu rõ hơn về những sản phẩm của ACTech!</li>
+            <li class="bot__output bot__output--standard">
+              <span class="bot__output--second-sentence">Bạn có thể hỏi tôi rất nhiều vấn đề!</span>
+              <ul>
+              <li class="input__nested-list">Những <span class="bot__command">thông tin</span> về ACTech</li>
+              <li class="input__nested-list">Các <span class="bot__command">sản phẩm</span> nổi bật của ACTech </li>
+              <li class="input__nested-list">Hoặc tôi có thể <span class="bot__command">trợ giúp</span> (hướng dẫn chi tiết)</li>
+              <li class="input__nested-list">Hãy gõ <span class="bot__command">ACTee</span> để hiển thị danh sách những lệnh trợ giúp</li>
+              </ul>
+              Bạn có thể cuộn trang xuống dưới để tìm kiếm thông tin liên hệ về chúng tôi.
+            </li>
+            </ul>
+          </div>
+          <div class="chatbox-area">
+            <form action="" id="chatform">
+              <textarea placeholder="Talk to me!" class="chatbox" name="chatbox" resize: "none" minlength="2"></textarea>
+              <input class="submit-button" type="submit" value="send">
+            </form>
+          </div>
+        </div>
 		  </div>
           <div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 mt-12 mt-sm-12 mt-md-12 ">
@@ -186,7 +206,7 @@
     </div>
 
     <!-- JS here -->
-	<script src="./assets/js/includeHTML.js"></script>
+	  <script src="./assets/js/includeHTML.js"></script>
 	
     <!-- All JS Custom Plugins Link Here here -->
     <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
@@ -219,5 +239,6 @@
     <!-- Jquery Plugins, main Jquery -->
     <script src="./assets/js/plugins.js"></script>
     <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/chatbot.js"></script>
   </body>
 </html>
