@@ -786,6 +786,32 @@
 
   <script>
     $(document).ready(function(){
+      function submitForm() {
+    const form = document.getElementById('my-form');
+    action = form.action;
+    const formData = new FormData(form);
+    formData.forEach((value, key) => {
+      return (object[key] = value);
+    });
+    const data = JSON.stringify(object);
+    console.log(data);
+    $.ajax({
+        type: 'POST',
+        url: "https://script.google.com/macros/s/AKfycbylW6u1eaQNa6H9MnpWMtVSpHk2sjI8j3sJLE2O58QcEgddRlybFqtaC9dHcqdXnemwPQ/exec",
+        dataType: 'text',
+        contentType: 'application/json',
+        cors: true,
+        secure: true,
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+        },
+        data: data,
+        success: function (result) {
+        console.log("Success123");
+         // result is an object which is created from the returned JSON
+        },
+      });
+  }
       "use strict";
       var mlCodes = [
           {

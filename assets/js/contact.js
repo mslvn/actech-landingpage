@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     // validate contactForm form
     $(function() {
-        $('#contactForm').validate({
+        $('#contactForm1111').validate({
             rules: {
                 name: {
                     required: true,
